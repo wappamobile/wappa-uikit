@@ -1,0 +1,29 @@
+{
+  "name": "wappa-uikit",
+  "version": "1.0.0",
+  "description": "Wappa Style Guide",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wappamobile/wappa-uikit.git"
+  },
+  "keywords": [
+    "uikit",
+    "style",
+    "guide",
+    "bootstrap"
+  ],
+  "author": "Nelson Francisco <nelsondelega@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/wappamobile/wappa-uikit/issues"
+  },
+  "homepage": "https://github.com/wappamobile/wappa-uikit",
+  "engines": {
+    "node": ">=0.12.7"
+  },
+  "readme": "readme.md",
+  "license": "proprietary",
+  "private": true
+}
