@@ -1,0 +1,22 @@
+{
+  "name": "wappa-uikit",
+  "description": "Wappa Style Guide",
+  "main": [
+    "js/app.js",
+    "css/app.scss"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "authors": [
+    "Nelson <nelsondelega@gmail.com>"
+  ],
+  "license": "proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
