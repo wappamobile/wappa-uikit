@@ -5,7 +5,10 @@
     "js/app.js",
     "css/app.scss"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "modernizr": "~3.3.1",
+    "normalize-css": "~4.1.1"
+  },
   "devDependencies": {},
   "authors": [
     "Nelson <nelsondelega@gmail.com>"
