@@ -1,11 +1,8 @@
 {
   "name": "wappa-uikit",
   "description": "Wappa Style Guide",
-  "main": [
-    "js/app.js",
-    "css/app.scss"
-  ],
   "dependencies": {
+    "bootstrap": "~3.3.6",
     "modernizr": "~3.3.1",
     "normalize-css": "~4.1.1"
   },

@@ -466,6 +466,9 @@ div[class*="col-md"]:last-of-type {
 .fontG {
     font-size: 30px;
 }
+.font40 {
+    font-size: 40px;
+}
 .font24 {
     font-size: 24px;
 }
@@ -566,6 +569,9 @@ div[class*="col-md"]:last-of-type {
 }
 .txt-color-grey-opacity {
     color: #7c7c7c;
+}
+.txt-color-default {
+    color: #302f2f;
 }
 .txt-color-white {
     color: #fff;
@@ -862,8 +868,11 @@ div[class*="col-md"]:last-of-type {
 .margin-bottom-30 {
     margin-bottom: 30px !important;
 }
-.margin-bottom {
+.margin-bottom-40 {
     margin-bottom: 40px !important;
+}
+.margin-bottom-50 {
+    margin-bottom: 50px !important;
 }
 
 /* Main */

@@ -2,13 +2,7 @@
 -------------------------------------------------------------- */
 body {
   background:  #fff;
-  color: #474747;
-  line-height: 1.5;
 }
-
-a {color: #218fc2; text-decoration: underline;}
-a:visited {color: #135777;}
-a:focus, a:hover {color: #135777; outline: 0;}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -21,12 +15,6 @@ h3 {font-size: 1.5em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em;}
 h6 {font-size: .8em;}
-
-p{margin-top: 0;}
-
-img{height: auto; max-width: 100%;}
-
-label, label input, label textarea, label select{display: block;}
 
 pre, code, tt{
   background-color: #F8F8F8;
@@ -87,28 +75,12 @@ blockquote > :last-child {margin-bottom: 0;}
 	color: #fff;
 }
 
-/* Utilities
--------------------------------------------------------------- */
-.container {
-	margin: 0 auto;
-	max-width: 768px;
-	padding: 0 2em;
-}
-
-.group {}
-
-
 /* Call To Actions
 -------------------------------------------------------------- */
 .logo .icon-logo{
 	font-size: 6em;
 	line-height: .5em;
 }
-
-/* Call To Actions
--------------------------------------------------------------- */
-.ctas {}
-
 
 /* Buttons
 -------------------------------------------------------------- */
@@ -159,9 +131,9 @@ blockquote > :last-child {margin-bottom: 0;}
 }
 
 @media screen and (max-width: 400px) {
-.list--inline li {
-	padding: 0 .3em;
-}
+    .list--inline li {
+    	padding: 0 .3em;
+    }
 }
 
 /* Highlights
@@ -179,4 +151,69 @@ blockquote > :last-child {margin-bottom: 0;}
 
 .highlights li{
 	padding-bottom: .5em;
+}
+
+.hexa {
+    width: 146px;
+    height: 73px;
+    position: relative;
+    display: inline-block;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.hexa:before, .hexa:after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 86px;
+    height: 83px;
+    -moz-transform: rotate(145deg) skew(22.5deg);
+    -webkit-transform: rotate(145deg) skew(22.5deg);
+    transform: rotate(145deg) skew(22.5deg);
+}
+.hexa, .hexa:before, .hexa:after {
+    background: #f2f2f2;
+}
+.hexa:before {
+    top: -42px;
+}
+.hexa:after {
+    top: 31px;
+}
+
+.doc-hr {
+    clear: both;
+    display: block;
+    border: none;
+    margin: 65px auto;
+    background-color: #ededed;
+    width: 125px;
+    height: 7px;
+}
+
+.doc-btn {
+    display: block;
+    border: 3px solid lightgray;
+    color: #222222;
+    font-size: 15px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.doc-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.doc-footer {
+    clear: both;
+    background: #0c4195;
+    height: 60px;
+}
+
+.doc-footer .icon-logo {
+    line-height: 44px;
+    height: 40px;
+    overflow: hidden;
 }
