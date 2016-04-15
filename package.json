@@ -13,7 +13,8 @@
     "uikit",
     "style",
     "guide",
-    "bootstrap"
+    "bootstrap",
+    "theme"
   ],
   "author": "Nelson Francisco <nelsondelega@gmail.com>",
   "bugs": {
