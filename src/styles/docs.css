@@ -208,7 +208,8 @@ blockquote > :last-child {margin-bottom: 0;}
 
 .doc-footer {
     clear: both;
-    background: #0c4195;
+    background: #000;
+    color: #b7b7b7;
     height: 60px;
 }
 
@@ -216,4 +217,5 @@ blockquote > :last-child {margin-bottom: 0;}
     line-height: 44px;
     height: 40px;
     overflow: hidden;
+    top: 13px;
 }

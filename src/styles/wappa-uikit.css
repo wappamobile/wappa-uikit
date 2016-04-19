@@ -1150,8 +1150,7 @@ div[class*="col-md"]:last-of-type {
     transition: 250ms cubic-bezier(0.1, .57, .1, 1);
     -webkit-transform: translate(0px, 0) translateZ(0px);
 }
-
-nav ul li a {
+#left-panel nav ul li a {
     padding: 22px 10px 22px 20px;
     font-size: 20px;
     line-height: normal;
@@ -1160,13 +1159,13 @@ nav ul li a {
     font-weight: 400;
     position: relative;
 }
-nav>ul>li>a>i {
+#left-panel nav>ul>li>a>i {
     display: inline-block;
     font-size: 18px;
     margin-right: 12px;
     width: 30px;
 }
-nav>ul>li.active>a:before {
+#left-panel nav>ul>li.active>a:before {
     content: '' !important;
     position: absolute;
     top: 18px;
@@ -1175,22 +1174,22 @@ nav>ul>li.active>a:before {
     width: 4px;
     height: 28px;
 }
-nav>ul>li.active>a {
+#left-panel nav>ul>li.active>a {
     color: #37a0da !important;
 }
-nav>ul>li.active>a>i {
+#left-panel nav>ul>li.active>a>i {
     text-shadow: 0 0 1px #fff;
 }
-nav>ul>li.active>a>span {
+#left-panel nav>ul>li.active>a>span {
     font-family: 'proxima_novasemibold';
 }
-nav ul li a:hover {
+#left-panel nav ul li a:hover {
     color: #fff;
 }
-nav ul li a:focus {
+#left-panel nav ul li a:focus {
     color: #c9c9c9;
 }
-nav ul li a:active {
+#left-panel nav ul li a:active {
     background: #616161;
 }
 @media (min-width: 768px) and (max-width: 979px) {
