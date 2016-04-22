@@ -10,6 +10,6 @@
 #front
 node_modules/
 npm-debug.log
-src/js/vendors/
+src/scripts/vendors/
 .tmp/
 .sass-cache/
