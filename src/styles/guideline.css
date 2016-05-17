@@ -748,6 +748,8 @@ pre.gl code {
     background-image: -webkit-linear-gradient(-285deg, #6d6c63, #808078);
     background-image: linear-gradient(15deg, #6d6c63, #808078);
     position: relative;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2) inset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .gl-nav ul {
     -webkit-box-sizing: border-box;
