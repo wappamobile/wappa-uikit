@@ -5,16 +5,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
-h1 {font-size: 2.5em;}
-h2 {font-size: 2em;}
-h3 {font-size: 1.5em;}
-h4 {font-size: 1.2em;}
-h5 {font-size: 1em;}
-h6 {font-size: .8em;}
 
 pre, code, tt{
   background-color: #F8F8F8;
@@ -273,16 +266,16 @@ blockquote > :last-child {margin-bottom: 0;}
     background-color: #16a085;
 }
 .palette-emerald {
-    background-color: #2ecc71;
+    background-color: #a1cf17;
 }
 .palette-nephritis {
-    background-color: #27ae60;
+    background-color: #99cc00;
 }
 .palette-peter-river {
-    background-color: #3498db;
+    background-color: #00a1f3;
 }
 .palette-belize-hole {
-    background-color: #2980b9;
+    background-color: #008BD2;
 }
 .palette-amethyst {
     background-color: #9b59b6;
@@ -309,21 +302,21 @@ blockquote > :last-child {margin-bottom: 0;}
     background-color: #d35400;
 }
 .palette-alizarin {
-    background-color: #e74c3c;
+    background-color: #f05c58;
 }
 .palette-pomegranate {
-    background-color: #c0392b;
+    background-color: #e74c3c;
 }
 .palette-clouds {
     background-color: #ecf0f1;
     color: #bdc3c7;
 }
 .palette-silver {
-    background-color: #bdc3c7;
+    background-color: #dcdcdc;
 }
 .palette-concrete {
-    background-color: #95a5a6;
+    background-color: #797979;
 }
 .palette-asbestos {
-    background-color: #7f8c8d;
+    background-color: #474746;
 }

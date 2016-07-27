@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="scripts/vendors/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/daf89d25ac/WappaIcons/style.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/fonts/icomoon/style.css">
     <link rel="stylesheet" href="styles/typography.css">
     <link rel="stylesheet" href="styles/wappa-uikit.css">
     <link rel="stylesheet" href="styles/docs.css">
@@ -64,13 +64,13 @@
                 <input type="text" class="text w100" placeholder="Inactive">
             </div>
             <div class="col-xs-3">
-                <input type="text" class="text w100" placeholder="Error">
+                <input type="text" class="text w100 error" placeholder="Error">
             </div>
             <div class="col-xs-3">
-                <input type="text" class="text w100" placeholder="Success">
+                <input type="text" class="text w100 valid" placeholder="Success">
             </div>
             <div class="col-xs-3">
-                <input type="text" class="text w100" placeholder="Disabled">
+                <input type="text" class="text w100" disabled placeholder="Disabled">
             </div>
         </div>
         
@@ -157,9 +157,34 @@
         <div class="row">
             <div class="col-xs-5">
                 <h3 class="font26 fontLight margin-top-40">Progress bars & Sliders</h3>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 45%;"></div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 10%;"></div>
+                    <div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
+                    <div class="progress-bar progress-bar-success" style="width: 10%;"></div>
+                    <div class="progress-bar progress-bar-info" style="width: 10%;"></div>
+                </div>
             </div>
             <div class="col-xs-6 col-xs-offset-1">
                 <h3 class="font26 fontLight margin-top-40">Navigation</h3>
+
+                <ul class="pagination">
+                    <li class="previous"><a href="#fakelink" class="icon-arrow-left2"></a></li>
+                    <li class="active"><a href="#fakelink">1</a></li>
+                    <li><a href="#fakelink">2</a></li>
+                    <li><a href="#fakelink">3</a></li>
+                    <li><a href="#fakelink">4</a></li>
+                    <li><a href="#fakelink">5</a></li>
+                    <li><a href="#fakelink">6</a></li>
+                    <li><a href="#fakelink">7</a></li>
+                    <li><a href="#fakelink">8</a></li>
+                    <li class="next"><a href="#fakelink" class="icon-arrow-right2"></a></li>
+                </ul>
             </div>
         </div>
 
@@ -167,38 +192,81 @@
             <div class="col-xs-3">
                 <h3 class="font26 fontLight margin-top-40">Checkboxes</h3>
 
-                <label class="checkbox" for="checkbox1">
-                    <input type="checkbox" data-toggle="checkbox">Unchecked
-                </label>
-                <label class="checkbox" for="checkbox2">
-                    <input type="checkbox" checked="checked" data-toggle="checkbox">Checked
-                </label>
-                <label class="checkbox" for="checkbox3">
-                    <input type="checkbox" data-toggle="checkbox" disabled="">Disabled unchecked
-                </label>
-                <label class="checkbox" for="checkbox4">
-                    <input type="checkbox" checked="checked" data-toggle="checkbox" disabled="">Disabled checked
-                </label>
+                <div class="row no-margin">
+                    <input id="test1" type="checkbox" class="checkbox"><label for="test1">Unchecked</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input id="test2" type="checkbox" class="checkbox" checked="checked"><label for="test2">Checked</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input id="test3" type="checkbox" class="checkbox" disabled><label for="test3">Disabled unchecked</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input id="test4" type="checkbox" class="checkbox" checked="checked" disabled><label for="test4">Disabled checked</label>
+                </div>
             </div>
             <div class="col-xs-3">
                 <h3 class="font26 fontLight margin-top-40">Radio Buttons</h3>
 
-                <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio">Radio is off
-                </label>
-                <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="" class="custom-radio">Radio is on
-                </label>
-
-                <label class="radio">
-                    <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="" class="custom-radio">Disabled radio is off
-                </label>
-                <label class="radio">
-                    <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="" class="custom-radio">Disabled radio is on
-                </label>
+                <div class="row no-margin">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" class="radio"><label for="optionsRadios1">Radio is off</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked class="radio"><label for="optionsRadios2">Radio is on</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" disabled class="radio"><label for="optionsRadios3">Disabled radio is off</label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" checked disabled class="radio"><label for="optionsRadios4">Disabled radio is on</label>
+                </div>
             </div>
             <div class="col-xs-3">
                 <h3 class="font26 fontLight margin-top-40">Switches</h3>
+                <div class="row no-margin">
+                    <label class="check-person">
+                        <input type="checkbox" class="ios-switch tinyswitch" checked>
+                        <div>
+                            <div>
+                            </div>
+                        </div>
+                    </label>&nbsp;
+                    <label class="check-person">
+                        <input type="checkbox" class="ios-switch tinyswitch">
+                        <div>
+                            <div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="row no-margin margin-top-10">
+                    <label class="check-person">
+                        <input type="checkbox" class="ios-switch tinyswitch" checked disabled>
+                        <div>
+                            <div>
+                            </div>
+                        </div>
+                    </label>&nbsp;
+                    <label class="check-person">
+                        <input type="checkbox" class="ios-switch tinyswitch" disabled>
+                        <div>
+                            <div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="row no-margin margin-top-10">
+                        <div class="display-inline-block">
+                            <input id="tipoControleLimite1" type="radio" name="tipoControleLimite" class="radio-person" checked>
+                            <label for="tipoControleLimite1"><span></span>Sim</label>
+                        </div>
+                        &nbsp;
+                        <div class="display-inline-block">
+                            <input id="tipoControleLimite2" type="radio" name="tipoControleLimite" class="radio-person">
+                            <label for="tipoControleLimite2"><span></span>Não</label>
+                        </div>                    
+                </div>
             </div>
             <div class="col-xs-3">
                 <h3 class="font26 fontLight margin-top-40">Share</h3>
@@ -209,46 +277,46 @@
         <div class="demo-row typography-row">
             <div class="demo-content">
                 <div class="demo-type-example">
-                    <h1><span class="demo-heading-note">Header 1</span>Showers across the W</h1>
+                    <h1><span class="demo-heading-note">Header 1</span>Mobilidade e gestão de despesas para sua empresa</h1>
                 </div>
                 <div class="demo-type-example">
-                    <h2><span class="demo-heading-note">Header 2</span>Give this quartet a few</h2>
+                    <h2><span class="demo-heading-note">Header 2</span>Mobilidade e gestão de despesas para sua empresa</h2>
                 </div>
                 <div class="demo-type-example">
-                    <h3><span class="demo-heading-note">Header 3</span>The Vatican transitions to a</h3>
+                    <h3><span class="demo-heading-note">Header 3</span>Mobilidade e gestão de despesas para sua empresa</h3>
                 </div>
                 <div class="demo-type-example">
-                    <h4><span class="demo-heading-note">Header 4</span>Great American Bites: Telluride's Oak, The</h4>
+                    <h4><span class="demo-heading-note">Header 4</span>Mobilidade e gestão de despesas para sua empresa</h4>
                 </div>
                 <div class="demo-type-example">
-                    <h5><span class="demo-heading-note">Header 5</span>Author Diane Alberts loves her some good</h5>
+                    <h5><span class="demo-heading-note">Header 5</span>Mobilidade e gestão de despesas para sua empresa</h5>
                 </div>
                 <div class="demo-type-example">
-                    <h6><span class="demo-heading-note">Header 6</span>With the success of young-adult book-to-movie</h6>
+                    <h6><span class="demo-heading-note">Header 6</span>Mobilidade e gestão de despesas para sua empresa</h6>
                 </div>
                 <div class="demo-type-example">
                     <span class="demo-text-note">Paragraph</span>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <p>Líder em chamadas de táxis para empresas, a Wappa oferece para usuários corporativos e pessoais o mais moderno e prático aplicativo de táxis do Brasil. Sempre com a melhor interface, design e recursos exclusivos.</p>
                 </div>
                 <div class="demo-type-example">
                     <span class="demo-text-note">Image</span>
-                    <img src="http://designmodo.github.io/Flat-UI/docs/assets/img/example-image.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p class="img-comment"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <img src="images/docs/taxi.jpeg" alt="example-image" class="img-rounded img-responsive">
+                    <p class="img-comment"><strong>Nota:</strong> Economize em mais de 44% utilizando nossa ferramenta de gestão de táxi.</p>
                 </div>
                 <div class="demo-type-example">
                     <span class="demo-text-note">Lead Text</span>
-                    <p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p class="lead">Há mais de 10 anos cuidando do transporte de milhares de executivos. Mais de 3.000 clientes, mais de 350 cidades no Brasil e Portugal.</p>
                 </div>
                 <div class="demo-type-example">
                     <span class="demo-text-note">Quote</span>
                     <blockquote>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+                        <p>Há mais de 10 anos cuidando do transporte de milhares de executivos. Mais de 3.000 clientes, mais de 350 cidades no Brasil e Portugal.</p>
                         <small>Steve Jobs, CEO Apple</small>
                     </blockquote>
                 </div>
                 <div class="demo-type-example">
                     <span class="demo-text-note">Small Font</span>
-                    <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+                    <p><small>Há mais de 10 anos cuidando do transporte de milhares de executivos. Mais de 3.000 clientes, mais de 350 cidades no Brasil e Portugal.</small></p>
                 </div>
             </div><!-- /.demo-content-wide -->
         </div>
@@ -259,12 +327,12 @@
             <div class="swatches-col">
                 <div class="pallete-item">
                     <dl class="palette palette-peter-river">
-                        <dt>#3498db</dt>
+                        <dt>#00a1f3</dt>
                         <dd>Peter river</dd>
                     </dl>
                     <dl class="palette palette-belize-hole">
-                        <dt>#2980b9</dt>
-                        <dd>Belize hole</dd>
+                        <dt>#0099cc</dt>
+                        <dd>Wappa</dd>
                     </dl>
                 </div>
                 <div class="pallete-item">
@@ -279,11 +347,11 @@
                 </div>
                 <div class="pallete-item">
                     <dl class="palette palette-emerald">
-                        <dt>#2ecc71</dt>
+                        <dt>#a1cf17</dt>
                         <dd>Emerald</dd>
                     </dl>
                     <dl class="palette palette-nephritis">
-                        <dt>#27ae60</dt>
+                        <dt>#99cc00</dt>
                         <dd>Nephritis</dd>
                     </dl>
                 </div>
@@ -294,7 +362,7 @@
                     </dl>
                     <dl class="palette palette-wisteria">
                         <dt>#8e44ad</dt>
-                        <dd>Wisteria</dd>
+                        <dd>Vitoria</dd>
                     </dl>
                 </div>
                 <div class="pallete-item">
@@ -329,12 +397,12 @@
                 </div>
                 <div class="pallete-item">
                     <dl class="palette palette-alizarin">
-                        <dt>#e74c3c</dt>
+                        <dt>#f05c58</dt>
                         <dd>Alizarin</dd>
                     </dl>
                     <dl class="palette palette-pomegranate">
-                        <dt>#c0392b</dt>
-                        <dd>Pomegranate</dd>
+                        <dt>#e74c3c</dt>
+                        <dd>Cerezo</dd>
                     </dl>
                 </div>
                 <div class="pallete-item">
@@ -343,17 +411,17 @@
                         <dd>Clouds</dd>
                     </dl>
                     <dl class="palette palette-silver">
-                        <dt>#bdc3c7</dt>
+                        <dt>#dcdcdc</dt>
                         <dd>Silver</dd>
                     </dl>
                 </div>
                 <div class="pallete-item">
                     <dl class="palette palette-concrete">
-                        <dt>#95a5a6</dt>
-                        <dd>Concrete</dd>
+                        <dt>#797979</dt>
+                        <dd>Verme</dd>
                     </dl>
                     <dl class="palette palette-asbestos">
-                        <dt>#7f8c8d</dt>
+                        <dt>#474746</dt>
                         <dd>Asbestos</dd>
                     </dl>
                 </div>
