@@ -178,12 +178,6 @@ div[class*="col-md"]:last-of-type {
     padding-right: 0;
 }
 
-@media (max-width: 979px) {
-    div[class*="col-md"] {
-        padding: 0!important;
-    }
-}
-
 .overflow-auto {
     overflow: auto;
 }
@@ -469,6 +463,9 @@ div[class*="col-md"]:last-of-type {
 .font40 {
     font-size: 40px;
 }
+.font26 {
+    font-size: 26px;
+}
 .font24 {
     font-size: 24px;
 }
@@ -508,6 +505,9 @@ div[class*="col-md"]:last-of-type {
 }
 .fontThinLight {
     font-family: 'proxima_nova_thin';
+}
+.fontLight{
+    font-family: 'proxima_novalight';
 }
 .letter-spacingM {
     letter-spacing: .15em;
@@ -758,6 +758,12 @@ div[class*="col-md"]:last-of-type {
 .padding-50 {
     padding: 50px;
 }
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+.padding-left-10 {
+    padding-left: 10px !important;
+}
 .padding-left-15 {
     padding-left: 15px !important;
 }
@@ -775,6 +781,9 @@ div[class*="col-md"]:last-of-type {
 }
 .padding-right-0 {
     padding-right: 0px !important;   
+}
+.padding-right-5 {
+    padding-right: 5px !important;   
 }
 .padding-right-10 {
     padding-right: 10px !important;   
@@ -908,7 +917,6 @@ div[class*="col-md"]:last-of-type {
 }
 
 #content {
-    position: relative;
     padding: 25px 25px 0;
 }
 @media (max-width: 767px) {
@@ -933,8 +941,10 @@ div[class*="col-md"]:last-of-type {
 }
 #header .logo-desktop {
     margin-left: 17px;
-    font-size:76px;
-    bottom:4px;
+    color: white;
+    font-size: 76px;
+    line-height: 69px;
+    height: 100%;
 }
 #header .logo-mobile {
     margin-left: 17px;
@@ -1035,6 +1045,7 @@ div[class*="col-md"]:last-of-type {
 #header #logout {
     width: 88px;
     height: 100%;
+    padding: 0;
 }
 #header #logout a {
     background: #214d92;
@@ -1045,7 +1056,13 @@ div[class*="col-md"]:last-of-type {
 #header #logout a:hover {
     background: rgba(255, 255, 255, .1);
 }
+#header #logout span {
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+}
 #header #logout i {
+    float: left;
     margin: 5px 0 0 10px;
     font-size: 20px;
 }
@@ -1127,28 +1144,28 @@ div[class*="col-md"]:last-of-type {
     -webkit-box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-    .hidden-menu #left-panel {
+    .hidden-menu #leftPanel {
         left: 0;
     }
 }
 @media (min-width: 768px) and (max-width: 880px) {
-    .hidden-menu #left-panel {
+    .hidden-menu #leftPanel {
         left: 0;
     }
 }
 @media (max-width: 767px) {
-    .hidden-menu #left-panel {
+    .hidden-menu #leftPanel {
         left: 0;
     }
 }
 @media only screen and (min-width: 0) and (max-width: 679px) {
-    .hidden-menu #left-panel {
+    .hidden-menu #leftPanel {
         left: 0;
     }
 }
 
 /* Menu */
-#left-panel {
+#leftPanel {
     width: 260px;
     min-height: 100%;
     padding-top: 60px;
@@ -1162,7 +1179,7 @@ div[class*="col-md"]:last-of-type {
     transition: 250ms cubic-bezier(0.1, .57, .1, 1);
     -webkit-transform: translate(0px, 0) translateZ(0px);
 }
-#left-panel nav ul li a {
+#leftPanel nav ul li a {
     padding: 22px 10px 22px 20px;
     font-size: 20px;
     line-height: normal;
@@ -1171,13 +1188,13 @@ div[class*="col-md"]:last-of-type {
     font-weight: 400;
     position: relative;
 }
-#left-panel nav>ul>li>a>i {
+#leftPanel nav>ul>li>a>i {
     display: inline-block;
     font-size: 18px;
     margin-right: 12px;
     width: 30px;
 }
-#left-panel nav>ul>li.active>a:before {
+#leftPanel nav>ul>li.active>a:before {
     content: '' !important;
     position: absolute;
     top: 18px;
@@ -1186,58 +1203,58 @@ div[class*="col-md"]:last-of-type {
     width: 4px;
     height: 28px;
 }
-#left-panel nav>ul>li.active>a {
+#leftPanel nav>ul>li.active>a {
     color: #37a0da !important;
 }
-#left-panel nav>ul>li.active>a>i {
+#leftPanel nav>ul>li.active>a>i {
     text-shadow: 0 0 1px #fff;
 }
-#left-panel nav>ul>li.active>a>span {
+#leftPanel nav>ul>li.active>a>span {
     font-family: 'proxima_novasemibold';
 }
-#left-panel nav ul li a:hover {
+#leftPanel nav ul li a:hover {
     color: #fff;
 }
-#left-panel nav ul li a:focus {
+#leftPanel nav ul li a:focus {
     color: #c9c9c9;
 }
-#left-panel nav ul li a:active {
+#leftPanel nav ul li a:active {
     background: #616161;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-    #left-panel {
+    #leftPanel {
         left: -260px;
     }
 }
 @media (min-width: 768px) and (max-width: 880px) {
-    #left-panel {
+    #leftPanel {
         left: -260px;
     }
 }
 @media (max-width: 767px) {
-    #left-panel {
+    #leftPanel {
         left: -260px;
     }
 }
 @media only screen and (max-width: 679px) and (min-width: 0) {
-    #left-panel {
+    #leftPanel {
         left: -260px;
     }
 }
-#left-panel .downloads ul {
+#leftPanel .downloads ul {
     list-style: none;
 }
-#left-panel .downloads li {
+#leftPanel .downloads li {
     margin: 5px 8px;
 }
-#left-panel .downloads {
+#leftPanel .downloads {
     margin: 75px 25px 0;
 }
-#left-panel .downloads a:hover {
+#leftPanel .downloads a:hover {
     color: #0099cc;
 }
 
-#left-panel .icoMenuPassos {
+#leftPanel .icoMenuPassos {
     background-color: #c42525;
     width: 18px;
     margin-top: 5px;

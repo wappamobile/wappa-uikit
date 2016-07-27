@@ -39,13 +39,17 @@ blockquote > :last-child {margin-bottom: 0;}
 -------------------------------------------------------------- */
 .site-header {
 	background: url('../images/docs/bg-highlight2.jpg') fixed top left;
-	padding: 5em 0;
+	padding: 7em 0;
 	color: #fff;
 	text-align: center;
 }
+.site-header-demo {
+    padding: 3em 0 2em;
+    text-align: center;   
+}
 
 @media screen and (max-width: 600px) {
-	.site-header {
+	.site-header, .site-header-demo {
 		font-size: 80%;
 	}
 }
@@ -78,27 +82,26 @@ blockquote > :last-child {margin-bottom: 0;}
 /* Call To Actions
 -------------------------------------------------------------- */
 .logo .icon-logo{
-	font-size: 6em;
+	font-size: 10em;
 	line-height: .5em;
 }
 
 /* Buttons
 -------------------------------------------------------------- */
-.btn {
+.btn-docs {
 	color: #fff;
 	font-size: 1.4em;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 12px 30px;
 	text-decoration: none;
 }
 
-.btn:visited, .btn:hover {
+.btn-docs:visited, .btn-docs:hover {
 	color: #fff;
 }
 
 .btn--cta {
 	border: 3px solid #fff;
-	background: #366f8a;
 	margin: 0 1em;
 }
 
@@ -218,4 +221,109 @@ blockquote > :last-child {margin-bottom: 0;}
     height: 40px;
     overflow: hidden;
     top: 13px;
+}
+
+.demo-row.typography-row .demo-content {
+    float: none;
+    width: auto;
+    clear: both;
+}
+
+
+.demo-swatches-row .swatches-col {
+    width: 800px;
+    margin-left: -5px;
+}
+
+.pallete-item {
+    width: 140px;
+    float: left;
+    margin: 0 0 20px 20px;
+}
+
+.palette {
+    font-size: 14px;
+    line-height: 1.214;
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.demo-row.typography-row .demo-type-example {
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+}
+.demo-row .demo-heading-note, .demo-row .demo-text-note {
+    display: block;
+    width: 260px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: 13px;
+    line-height: 13px;
+    color: #c0c1c2;
+    font-weight: 400;
+}
+
+.palette-turquoise {
+    background-color: #1abc9c;
+}
+.palette-green-sea {
+    background-color: #16a085;
+}
+.palette-emerald {
+    background-color: #2ecc71;
+}
+.palette-nephritis {
+    background-color: #27ae60;
+}
+.palette-peter-river {
+    background-color: #3498db;
+}
+.palette-belize-hole {
+    background-color: #2980b9;
+}
+.palette-amethyst {
+    background-color: #9b59b6;
+}
+.palette-wisteria {
+    background-color: #8e44ad;
+}
+.palette-wet-asphalt {
+    background-color: #34495e;
+}
+.palette-midnight-blue {
+    background-color: #2c3e50;
+}
+.palette-sun-flower {
+    background-color: #f1c40f;
+}
+.palette-orange {
+    background-color: #f39c12;
+}
+.palette-carrot {
+    background-color: #e67e22;
+}
+.palette-pumpkin {
+    background-color: #d35400;
+}
+.palette-alizarin {
+    background-color: #e74c3c;
+}
+.palette-pomegranate {
+    background-color: #c0392b;
+}
+.palette-clouds {
+    background-color: #ecf0f1;
+    color: #bdc3c7;
+}
+.palette-silver {
+    background-color: #bdc3c7;
+}
+.palette-concrete {
+    background-color: #95a5a6;
+}
+.palette-asbestos {
+    background-color: #7f8c8d;
 }
