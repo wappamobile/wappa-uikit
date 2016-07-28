@@ -11,6 +11,11 @@ var stripCssComments = require('gulp-strip-css-comments');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
+gulp.task('fonts', function () {
+    return gulp.src('src/styles/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest( 'dist/fonts' ));
+});
+
 gulp.task('styles', function () {
     return gulp.src([
             'src/bower/bootstrap/dist/css/bootstrap.css',
@@ -43,4 +48,4 @@ gulp.task('browser-sync', function () {
 
 gulp.task('serve', ['browser-sync']);
 
-gulp.task('build', ['styles']);
+gulp.task('build', ['styles', 'fonts']);
