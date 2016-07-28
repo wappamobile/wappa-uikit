@@ -20,16 +20,18 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src([
-            '!src/bower/bootstrap/dist/css/bootstrap.css',
+    gulp.src([
+            'src/bower/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css',
             '!src/guideline.css',
             '!src/docs.css'
         ])
+        .pipe($.concatCss('wappa-uikit.css'))
+        .pipe(gulp.dest('dist/css/'))
         .pipe($.concatCss('wappa-uikit.min.css'))
         .pipe($.stripCssComments( { all: true } ))
         .pipe($.cssmin())
-        .pipe(gulp.dest( 'dist/css/' ));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('browser-sync', function () {
