@@ -21,6 +21,7 @@ gulp.task('fonts', function () {
 
 gulp.task('css', function () {
     gulp.src([
+            'src/css/typography.css',
             'src/bower/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css',
             '!src/guideline.css',
