@@ -15,7 +15,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('src/styles/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+    return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
         .pipe(gulp.dest( 'dist/fonts' ));
 });
 
@@ -29,7 +29,7 @@ gulp.task('styles', function () {
         .pipe($.concatCss('wappa-uikit.min.css'))
         .pipe($.stripCssComments( { all: true } ))
         .pipe($.cssmin())
-        .pipe(gulp.dest( 'dist' ));
+        .pipe(gulp.dest( 'dist/css/' ));
 });
 
 gulp.task('browser-sync', function () {
