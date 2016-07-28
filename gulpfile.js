@@ -2,12 +2,15 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'del']
+    pattern: ['gulp-*', 'del', 'browser-sync']
 });
 
 gulp.task('images', function () {
     return gulp.src(
-        ['src/images/favicon.ico'])
+        [
+            'src/images/**/*.{ico,gif,jpg,jpeg,png,svg}',
+            "!src/images/docs{/**,}",
+        ])
         .pipe(gulp.dest( 'dist/images' ));
 });
 
@@ -30,7 +33,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('browser-sync', function () {
-    browserSync.instance = $.browserSync.init(
+    $.browserSync.instance = $.browserSync.init(
         [
             'src/**/*.html',
             'src/styles/**/*.css',
