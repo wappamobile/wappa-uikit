@@ -18,7 +18,7 @@ gulp.task('fonts', function () {
 
 gulp.task('styles', function () {
     return gulp.src([
-            'src/bower/bootstrap/dist/css/bootstrap.css',
+            '!src/bower/bootstrap/dist/css/bootstrap.css',
             'src/styles/**/*.css',
             '!src/guideline.css',
             '!src/docs.css'
