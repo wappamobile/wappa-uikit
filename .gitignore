@@ -13,4 +13,3 @@ npm-debug.log
 src/scripts/vendors/
 .tmp/
 .sass-cache/
-dist/
