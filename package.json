@@ -1,10 +1,7 @@
 {
   "name": "wappa-uikit",
   "version": "1.0.0",
-  "description": "Wappa Style Guide",
-  "scripts": {
-    "test": "npm test"
-  },
+  "description": "Wappa User Interface Kit",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wappamobile/wappa-uikit.git"
@@ -16,7 +13,7 @@
     "bootstrap",
     "theme"
   ],
-  "author": "Nelson Francisco <nelsondelega@gmail.com>",
+  "author": "Nelson Francisco <nelson.silva@wappa.com.br>",
   "bugs": {
     "url": "https://github.com/wappamobile/wappa-uikit/issues"
   },
@@ -29,6 +26,13 @@
   "private": true,
   "devDependencies": {
     "browser-sync": "^2.12.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-uglifycss": "^1.0.6"
   }
 }

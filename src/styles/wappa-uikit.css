@@ -2078,3 +2078,26 @@ input[type="radio"].radio-person:checked + label span {
 .pager li > a, .pager li > span{
     border-radius:2px;
 }
+
+.badge{
+    border-radius:2px;
+}
+
+.label-default{
+    background:#797979;
+}
+.label-primary{
+    background:#0099CC;
+}
+.label-success{
+    background:#A1CF17;
+}
+.label-info{
+
+}
+.label-warning{
+    background:#F1C40F;
+}
+.label-danger{
+    background:#F05C58;
+}

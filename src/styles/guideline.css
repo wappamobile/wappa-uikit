@@ -871,6 +871,7 @@ pre.gl .coffeescript .javascript, pre.gl .javascript .xml, pre.gl .tex .formula,
 .gl-main-font-family {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/*
 .gl-main-font-family:before {
     content: 'Complete fallback: "Helvetica Neue", Helvetica, Arial, sans-serif'}
 .gl-monospaced-font-family {
@@ -941,20 +942,20 @@ pre.gl .coffeescript .javascript, pre.gl .javascript .xml, pre.gl .tex .formula,
     font-weight: 300;
 }
 .gl-gl-light-font-weight:after {
-    content: "font-weight: 300;
-    "}
+    content: "font-weight: 300";
+}
 .gl-gl-regular-font-weight {
     font-weight: 400;
 }
 .gl-gl-regular-font-weight:after {
-    content: "font-weight: 400;
-    "}
+    content: "font-weight: 400";
+}
 .gl-gl-medium-font-weight {
     font-weight: 500;
 }
 .gl-gl-medium-font-weight:after {
-    content: "font-weight: 500;
-    "}
+    content: "font-weight: 500";
+}
 .gl-gl-bold-font-weight {
     font-weight: 700;
 }
@@ -1372,3 +1373,4 @@ ol.gl+p.gl, ol.gl+p.gl-lead, ul.gl+p.gl, ul.gl+p.gl-lead {
     margin-left: -1px;
     margin-right: -1px;
 }
+*/
