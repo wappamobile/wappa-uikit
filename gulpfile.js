@@ -19,10 +19,10 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest( 'dist/fonts' ));
 });
 
-gulp.task('styles', function () {
+gulp.task('css', function () {
     return gulp.src([
             '!src/bower/bootstrap/dist/css/bootstrap.css',
-            'src/styles/**/*.css',
+            'src/css/**/*.css',
             '!src/guideline.css',
             '!src/docs.css'
         ])
@@ -36,7 +36,7 @@ gulp.task('browser-sync', function () {
     $.browserSync.instance = $.browserSync.init(
         [
             'src/**/*.html',
-            'src/styles/**/*.css',
+            'src/css/**/*.css',
             'src/scripts/**/*.js',
             'src/images/**/*'
         ], {
@@ -56,5 +56,5 @@ gulp.task('clean', function(done) {
 gulp.task('serve', ['browser-sync']);
 
 gulp.task('build', ['clean'], function () {
-    gulp.start('styles', 'fonts', 'images');
+    gulp.start('css', 'fonts', 'images');
 });
