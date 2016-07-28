@@ -1,15 +1,15 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var $ = require('gulp-load-plugins')({
+    pattern: ['gulp-*', 'del']
+});
 
-var clean = require('gulp-clean');
-var cssmin = require('gulp-cssmin');
-var concatCss = require('gulp-concat-css');
-var stripCssComments = require('gulp-strip-css-comments');
-
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
+gulp.task('images', function () {
+    return gulp.src(
+        ['src/images/favicon.ico'])
+        .pipe(gulp.dest( 'dist/images' ));
+});
 
 gulp.task('fonts', function () {
     return gulp.src('src/styles/fonts/**/*.{eot,svg,ttf,woff,woff2}')
@@ -23,14 +23,14 @@ gulp.task('styles', function () {
             '!src/guideline.css',
             '!src/docs.css'
         ])
-        .pipe(concatCss('wappa-uikit.min.css'))
-        .pipe(stripCssComments( { all: true } ))
-        .pipe(cssmin())
+        .pipe($.concatCss('wappa-uikit.min.css'))
+        .pipe($.stripCssComments( { all: true } ))
+        .pipe($.cssmin())
         .pipe(gulp.dest( 'dist' ));
 });
 
 gulp.task('browser-sync', function () {
-    browserSync.instance = browserSync.init(
+    browserSync.instance = $.browserSync.init(
         [
             'src/**/*.html',
             'src/styles/**/*.css',
@@ -46,6 +46,12 @@ gulp.task('browser-sync', function () {
     );
 });
 
+gulp.task('clean', function(done) {
+    $.del(['dist'], done);
+});
+
 gulp.task('serve', ['browser-sync']);
 
-gulp.task('build', ['styles', 'fonts']);
+gulp.task('build', ['clean'], function () {
+    gulp.start('styles', 'fonts', 'images');
+});
