@@ -11474,11 +11474,6 @@ html.html-login body {
   background: url("../images/login/bg-login.jpg") no-repeat -400px center/cover;
 }
 
-html.html-login input:-webkit-autofill {
-  background-color: white !important;
-  border: solid 1px #999;
-}
-
 html.html-login .loginLight {
   display: none;
   margin: 20px 0;
@@ -11569,10 +11564,6 @@ html.html-login .container.login .inner .formLogin input {
   border-radius: 4px;
   border: solid 1px #b4b3b3;
   outline: 0;
-}
-
-html.html-login input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
 html.html-login .container.login .inner .formLogin input::-moz-selection {
@@ -11836,6 +11827,12 @@ option {
   border: 1px solid transparent;
   color: #797979;
   padding: 8px 0;
+}
+
+input:-webkit-autofill {
+  background-color: white !important;
+  border: solid 1px #999;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
 select {
