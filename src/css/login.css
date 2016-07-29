@@ -1,0 +1,296 @@
+html.html-login body, html.html-login {
+    min-width:320px;
+    min-height: 662px;
+    overflow-x:hidden;  
+}
+html.html-login{
+    background: url('../images/login/bg-login.jpg') no-repeat center center;
+    background: url('../images/login/bg-login.jpg') no-repeat -400px center/cover;
+}
+
+html.html-login input:-webkit-autofill {
+    background-color:white !important;
+    border:solid 1px #999;
+}
+
+html.html-login .loginLight {
+    display: none;
+    margin: 20px 0;
+    color: #FFF;
+    text-align:center;
+    text-shadow: .03em .03em .03em rgba(0,0,0,.6);
+}
+
+html.html-login .container.login {
+    width: 100%;
+    font-size: 15px;
+    padding-right: 0;
+}
+
+html.html-login .container.login .login-access {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+html.html-login .container.login .inner {
+    width: 400px;
+    margin: 90px auto 0;
+}
+
+html.html-login .container.login .logo {
+    transition: all .2s ease;
+    display: block;
+    margin-left:30px;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size:80px;
+    outline:0;
+    text-shadow: .005em .005em .005em rgba(0,0,0,.6);
+}
+
+html.html-login .link-atendimento {
+    transition: all .2s ease;
+    float:right;
+    color:white;
+    margin:-40px 35px;
+    outline:0;
+    text-shadow:.005em .005em .005em rgba(0,0,0,.6);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 7px 3px;
+}
+html.html-login .link-atendimento:hover,
+html.html-login .link-atendimento:focus,
+html.html-login .link-atendimento:active{
+    border-color:white;
+}
+
+html.html-login .link-atendimento .icon-phone {
+    font-size:25px;
+    vertical-align:middle;
+}
+
+html.html-login .container.login .inner .formLogin {
+    position: relative;
+    margin: 30px auto;
+    padding: 30px;
+    width: 332px;
+    background: #FBFBFB;
+    border-radius:6px;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+html.html-login .container.login .inner .formEsqueciSenha {
+    display: none;
+}
+
+html.html-login .container.login .inner .formEsqueciSenha p{
+    color: #008acf;
+    margin-bottom: 20px;
+}
+
+html.html-login .container.login .inner .formLogin input {
+    transition: all .2s ease;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius:4px;
+    border:solid 1px #b4b3b3;
+    outline:0;
+}
+html.html-login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+html.html-login .container.login .inner .formLogin input::-moz-selection {
+    background:#0099cc;
+    color:white;
+}
+html.html-login .container.login .inner .formLogin input::selection {
+    background:#0099cc;
+    color:white;   
+}
+
+html.html-login .container.login .inner .formLogin input#login,
+html.html-login .container.login .inner .formLogin input#senha {
+    width: 100%;
+}
+
+html.html-login .validacaoFormLogin label {
+    display: block;
+    width: 100%;
+    color: #f05c58;
+    font-size: 12px;
+    font-weight:bold;
+    padding:3px 0;
+}
+html.html-login .validacaoReCaptchaLogin label {
+    color: #f05c58;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+html.html-login .container.login .inner .formLogin input#email {
+    width: 250px;
+}
+
+html.html-login .container.login .inner .formLogin #btnEntrar {
+    transition: all .2s ease;
+    width: 100%;
+    padding: 12px 0;
+    background: #99cc00;
+    border:1px solid #99cc00;
+    color: white;
+    border-radius:4px;
+    font-size:18px;
+    outline:0;
+    margin-bottom: 15px;
+}
+html.html-login .container.login .inner .formLogin #btnEntrar:hover,
+html.html-login .container.login .inner .formLogin #btnEntrar:focus,
+html.html-login .container.login .inner .formLogin #btnEntrar:active{
+    text-shadow: 0 0 15px rgba(255,255,255,.8);
+    background: #90b71b;
+    border:1px solid #90b71b;
+}
+html.html-login .container.login .inner .formLogin #btnEntrar:active{
+    transition: none;
+    border-color:white;
+    border-radius:4px;
+}
+
+html.html-login .container.login .inner .formLogin a {
+    transition: all .2s ease;
+    display: block;
+    margin: 15px auto 0;
+    color: #008acf;
+    width: 150px;
+}
+html.html-login .container.login .inner .formLogin a:hover,
+html.html-login .container.login .inner .formLogin a:focus,
+html.html-login .container.login .inner .formLogin a:active{
+    text-decoration: underline;
+}
+
+html.html-login .container.login .inner .formLogin span.error {
+    color: #f05c58;
+    font-size: 10px;
+}
+
+html.html-login .container.login .inner .formLogin .g-recaptcha {
+    padding-left: 0;
+    transform: scale(0.90);
+    transform-origin: 0 0;
+    display: none;
+}
+
+html.html-login .container.login .downloads {
+    color:white;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+html.html-login .container.login .downloads a {
+    transition: all .2s ease;
+    display: inline-block;
+    margin: 15px 8px;
+    color:white;
+    font-size:22px;
+    outline:0;
+}
+html.html-login .container.login .downloads a:hover,
+html.html-login .container.login .downloads a:focus,
+html.html-login .container.login .downloads a:active{
+    color: #0099cc;
+}
+
+html.html-login .content-login {
+    padding: 0 !important;
+}
+
+html.html-login .content-white {
+    padding: 0 !important;
+    background-color: white;
+}
+
+html.html-login .content-white > div {
+    padding: 50px;
+    text-align: center;
+}
+
+html.html-login .content-white > div:nth-of-type(2) {
+    background-color: #f7f8fa;
+}
+
+html.html-login .content-white p {
+    margin: 25px;
+    font-size: 16px;
+    color: #3f3f40;
+}
+html.html-login .content-white p::-moz-selection {
+    background:#0099cc;
+    color:white;
+}
+html.html-login .content-white p::selection {
+    background:#0099cc;
+    color:white;   
+}
+
+html.html-login .btn-orange {
+    transition: all .2s ease;
+    display: inline-block;
+    padding: 7px 0;
+    width: 110px;
+    background-color:#ec971f;
+    border:1px solid #ec971f;
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+    outline:0;
+}
+html.html-login .btn-orange:hover,
+html.html-login .btn-orange:focus,
+html.html-login .btn-orange:active {
+    background-color: #df8e1c;
+    text-shadow: 0 0 8px rgba(255,255,255,.8);
+}
+html.html-login .btn-orange:active{
+    transition: none;
+    border-color:white;
+    border-radius:4px;
+}
+
+html.html-login .msgErro {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px 20px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background: #f05c58;
+    font-size: 18px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+html.html-login .zopim {
+    margin-right:26% !important;
+}
+
+@media screen and (max-width: 1169px) {
+    html.html-login .content-login{
+        width: 100%!important;
+    }
+    html.html-login .zopim {
+        margin-right:30px!important;
+    }
+
+    html.html-login .content-white {
+        display:none;
+    }
+}
