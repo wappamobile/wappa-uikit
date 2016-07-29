@@ -3,7 +3,7 @@ html.html-login body, html.html-login {
     min-height: 662px;
     overflow-x:hidden;  
 }
-html.html-login{
+html.html-login body{
     background: url('../images/login/bg-login.jpg') no-repeat center center;
     background: url('../images/login/bg-login.jpg') no-repeat -400px center/cover;
 }
