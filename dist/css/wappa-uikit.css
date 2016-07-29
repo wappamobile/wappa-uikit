@@ -11466,6 +11466,7 @@ ol.gl+p.gl, ol.gl+p.gl-lead, ul.gl+p.gl, ul.gl+p.gl-lead {
 .html-login {
   min-width: 320px;
   min-height: 662px;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -11686,6 +11687,7 @@ ol.gl+p.gl, ol.gl+p.gl-lead, ul.gl+p.gl, ul.gl+p.gl-lead {
 .html-login .content-white > div {
   padding: 50px;
   text-align: center;
+  height: 50%;
 }
 
 .html-login .content-white > div:nth-of-type(2) {
@@ -11706,6 +11708,13 @@ ol.gl+p.gl, ol.gl+p.gl-lead, ul.gl+p.gl, ul.gl+p.gl-lead {
 .html-login .content-white p::selection {
   background: #0099cc;
   color: white;
+}
+
+.no-margin.col-md-3.content-white {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
 }
 
 .html-login .btn-orange {
