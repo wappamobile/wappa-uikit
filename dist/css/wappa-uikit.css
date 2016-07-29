@@ -13356,7 +13356,7 @@ div[class*="col-md"]:last-of-type {
   -webkit-transform: translate(0px, 0) translateZ(0px);
 }
 
-#leftPanel nav ul li a {
+#leftPanel .nav ul li a {
   padding: 22px 10px 22px 20px;
   font-size: 20px;
   line-height: normal;
@@ -13366,14 +13366,14 @@ div[class*="col-md"]:last-of-type {
   position: relative;
 }
 
-#leftPanel nav>ul>li>a>i {
+#leftPanel .nav>ul>li>a>i {
   display: inline-block;
   font-size: 18px;
   margin-right: 12px;
   width: 30px;
 }
 
-#leftPanel nav>ul>li.active>a:before {
+#leftPanel .nav>ul>li.active>a:before {
   content: '' !important;
   position: absolute;
   top: 18px;
@@ -13383,27 +13383,27 @@ div[class*="col-md"]:last-of-type {
   height: 28px;
 }
 
-#leftPanel nav>ul>li.active>a {
+#leftPanel .nav>ul>li.active>a {
   color: #37a0da !important;
 }
 
-#leftPanel nav>ul>li.active>a>i {
+#leftPanel .nav>ul>li.active>a>i {
   text-shadow: 0 0 1px #fff;
 }
 
-#leftPanel nav>ul>li.active>a>span {
+#leftPanel .nav>ul>li.active>a>span {
   font-family: 'proxima_novasemibold';
 }
 
-#leftPanel nav ul li a:hover {
+#leftPanel .nav ul li a:hover {
   color: #fff;
 }
 
-#leftPanel nav ul li a:focus {
+#leftPanel .nav ul li a:focus {
   color: #c9c9c9;
 }
 
-#leftPanel nav ul li a:active {
+#leftPanel .nav ul li a:active {
   background: #616161;
 }
 
