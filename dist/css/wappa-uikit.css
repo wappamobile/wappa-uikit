@@ -11752,20 +11752,22 @@ ol.gl+p.gl, ol.gl+p.gl-lead, ul.gl+p.gl, ul.gl+p.gl-lead {
   margin-right: 26% !important;
 }
 
-html.html-login .logo-expense-moby {
+.html-login .logo-expense-moby {
   display: block;
   width: 65px;
   height: 95px;
   background: transparent url("../images/login/logo-expense.png");
   text-indent: -99999px;
+  margin: 0 auto;
 }
 
-html.html-login .logo-vaimoto {
+.html-login .logo-vaimoto {
   display: block;
   width: 228px;
   height: 55px;
   background: transparent url("../images/login/logo-vaimoto.png");
   text-indent: -99999px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1169px) {
