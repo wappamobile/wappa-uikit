@@ -7,9 +7,6 @@
     "normalize-css": "~4.1.1"
   },
   "devDependencies": {},
-  "authors": [
-    "Nelson <nelsondelega@gmail.com>"
-  ],
   "license": "proprietary",
   "ignore": [
     "**/.*",
