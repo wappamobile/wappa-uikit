@@ -13569,7 +13569,8 @@ input[required].ng-pristine,
 input[required].ng-dirty,
 input.ng-pristine.ng-valid,
 input.text,
-.editable-input.ng-pristine.ng-valid {
+.editable-input.ng-pristine.ng-valid,
+.form-control {
   border: none;
   border-bottom: solid 1px #b8b8b8;
 }
