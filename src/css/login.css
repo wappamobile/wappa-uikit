@@ -1,14 +1,14 @@
-html.html-login body, html.html-login {
+.html-login body, .html-login {
     min-width:320px;
     min-height: 662px;
     overflow-x:hidden;  
 }
-html.html-login body{
+.html-login body{
     background: url('../images/login/bg-login.jpg') no-repeat center center;
     background: url('../images/login/bg-login.jpg') no-repeat -400px center/cover;
 }
 
-html.html-login .loginLight {
+.html-login .loginLight {
     display: none;
     margin: 20px 0;
     color: #FFF;
@@ -16,24 +16,24 @@ html.html-login .loginLight {
     text-shadow: .03em .03em .03em rgba(0,0,0,.6);
 }
 
-html.html-login .container.login {
+.html-login .container.login {
     width: 100%;
     font-size: 15px;
     padding-right: 0;
 }
 
-html.html-login .container.login .login-access {
+.html-login .container.login .login-access {
     position: absolute;
     right: 0;
     top: 0;
 }
 
-html.html-login .container.login .inner {
+.html-login .container.login .inner {
     width: 400px;
     margin: 90px auto 0;
 }
 
-html.html-login .container.login .logo {
+.html-login .container.login .logo {
     transition: all .2s ease;
     display: block;
     margin-left:30px;
@@ -45,7 +45,7 @@ html.html-login .container.login .logo {
     text-shadow: .005em .005em .005em rgba(0,0,0,.6);
 }
 
-html.html-login .link-atendimento {
+.html-login .link-atendimento {
     transition: all .2s ease;
     float:right;
     color:white;
@@ -56,18 +56,18 @@ html.html-login .link-atendimento {
     border-radius: 4px;
     padding: 5px 7px 3px;
 }
-html.html-login .link-atendimento:hover,
-html.html-login .link-atendimento:focus,
-html.html-login .link-atendimento:active{
+.html-login .link-atendimento:hover,
+.html-login .link-atendimento:focus,
+.html-login .link-atendimento:active{
     border-color:white;
 }
 
-html.html-login .link-atendimento .icon-phone {
+.html-login .link-atendimento .icon-phone {
     font-size:25px;
     vertical-align:middle;
 }
 
-html.html-login .container.login .inner .formLogin {
+.html-login .container.login .inner .formLogin {
     position: relative;
     margin: 30px auto;
     padding: 30px;
@@ -80,16 +80,16 @@ html.html-login .container.login .inner .formLogin {
     overflow: hidden;
 }
 
-html.html-login .container.login .inner .formEsqueciSenha {
+.html-login .container.login .inner .formEsqueciSenha {
     display: none;
 }
 
-html.html-login .container.login .inner .formEsqueciSenha p{
+.html-login .container.login .inner .formEsqueciSenha p{
     color: #008acf;
     margin-bottom: 20px;
 }
 
-html.html-login .container.login .inner .formLogin input {
+.html-login .container.login .inner .formLogin input {
     transition: all .2s ease;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -99,21 +99,21 @@ html.html-login .container.login .inner .formLogin input {
     outline:0;
 }
 
-html.html-login .container.login .inner .formLogin input::-moz-selection {
+.html-login .container.login .inner .formLogin input::-moz-selection {
     background:#0099cc;
     color:white;
 }
-html.html-login .container.login .inner .formLogin input::selection {
+.html-login .container.login .inner .formLogin input::selection {
     background:#0099cc;
     color:white;   
 }
 
-html.html-login .container.login .inner .formLogin input#login,
-html.html-login .container.login .inner .formLogin input#senha {
+.html-login .container.login .inner .formLogin input#login,
+.html-login .container.login .inner .formLogin input#senha {
     width: 100%;
 }
 
-html.html-login .validacaoFormLogin label {
+.html-login .validacaoFormLogin label {
     display: block;
     width: 100%;
     color: #f05c58;
@@ -121,17 +121,17 @@ html.html-login .validacaoFormLogin label {
     font-weight:bold;
     padding:3px 0;
 }
-html.html-login .validacaoReCaptchaLogin label {
+.html-login .validacaoReCaptchaLogin label {
     color: #f05c58;
     font-size: 12px;
     font-weight:bold;
 }
 
-html.html-login .container.login .inner .formLogin input#email {
+.html-login .container.login .inner .formLogin input#email {
     width: 250px;
 }
 
-html.html-login .container.login .inner .formLogin #btnEntrar {
+.html-login .container.login .inner .formLogin #btnEntrar {
     transition: all .2s ease;
     width: 100%;
     padding: 12px 0;
@@ -143,51 +143,51 @@ html.html-login .container.login .inner .formLogin #btnEntrar {
     outline:0;
     margin-bottom: 15px;
 }
-html.html-login .container.login .inner .formLogin #btnEntrar:hover,
-html.html-login .container.login .inner .formLogin #btnEntrar:focus,
-html.html-login .container.login .inner .formLogin #btnEntrar:active{
+.html-login .container.login .inner .formLogin #btnEntrar:hover,
+.html-login .container.login .inner .formLogin #btnEntrar:focus,
+.html-login .container.login .inner .formLogin #btnEntrar:active{
     text-shadow: 0 0 15px rgba(255,255,255,.8);
     background: #90b71b;
     border:1px solid #90b71b;
 }
-html.html-login .container.login .inner .formLogin #btnEntrar:active{
+.html-login .container.login .inner .formLogin #btnEntrar:active{
     transition: none;
     border-color:white;
     border-radius:4px;
 }
 
-html.html-login .container.login .inner .formLogin a {
+.html-login .container.login .inner .formLogin a {
     transition: all .2s ease;
     display: block;
     margin: 15px auto 0;
     color: #008acf;
     width: 150px;
 }
-html.html-login .container.login .inner .formLogin a:hover,
-html.html-login .container.login .inner .formLogin a:focus,
-html.html-login .container.login .inner .formLogin a:active{
+.html-login .container.login .inner .formLogin a:hover,
+.html-login .container.login .inner .formLogin a:focus,
+.html-login .container.login .inner .formLogin a:active{
     text-decoration: underline;
 }
 
-html.html-login .container.login .inner .formLogin span.error {
+.html-login .container.login .inner .formLogin span.error {
     color: #f05c58;
     font-size: 10px;
 }
 
-html.html-login .container.login .inner .formLogin .g-recaptcha {
+.html-login .container.login .inner .formLogin .g-recaptcha {
     padding-left: 0;
     transform: scale(0.90);
     transform-origin: 0 0;
     display: none;
 }
 
-html.html-login .container.login .downloads {
+.html-login .container.login .downloads {
     color:white;
     text-align:center;
     margin-bottom: 10px;
 }
 
-html.html-login .container.login .downloads a {
+.html-login .container.login .downloads a {
     transition: all .2s ease;
     display: inline-block;
     margin: 15px 8px;
@@ -195,45 +195,45 @@ html.html-login .container.login .downloads a {
     font-size:22px;
     outline:0;
 }
-html.html-login .container.login .downloads a:hover,
-html.html-login .container.login .downloads a:focus,
-html.html-login .container.login .downloads a:active{
+.html-login .container.login .downloads a:hover,
+.html-login .container.login .downloads a:focus,
+.html-login .container.login .downloads a:active{
     color: #0099cc;
 }
 
-html.html-login .content-login {
+.html-login .content-login {
     padding: 0 !important;
 }
 
-html.html-login .content-white {
+.html-login .content-white {
     padding: 0 !important;
     background-color: white;
 }
 
-html.html-login .content-white > div {
+.html-login .content-white > div {
     padding: 50px;
     text-align: center;
 }
 
-html.html-login .content-white > div:nth-of-type(2) {
+.html-login .content-white > div:nth-of-type(2) {
     background-color: #f7f8fa;
 }
 
-html.html-login .content-white p {
+.html-login .content-white p {
     margin: 25px;
     font-size: 16px;
     color: #3f3f40;
 }
-html.html-login .content-white p::-moz-selection {
+.html-login .content-white p::-moz-selection {
     background:#0099cc;
     color:white;
 }
-html.html-login .content-white p::selection {
+.html-login .content-white p::selection {
     background:#0099cc;
     color:white;   
 }
 
-html.html-login .btn-orange {
+.html-login .btn-orange {
     transition: all .2s ease;
     display: inline-block;
     padding: 7px 0;
@@ -245,19 +245,19 @@ html.html-login .btn-orange {
     border-radius: 2px;
     outline:0;
 }
-html.html-login .btn-orange:hover,
-html.html-login .btn-orange:focus,
-html.html-login .btn-orange:active {
+.html-login .btn-orange:hover,
+.html-login .btn-orange:focus,
+.html-login .btn-orange:active {
     background-color: #df8e1c;
     text-shadow: 0 0 8px rgba(255,255,255,.8);
 }
-html.html-login .btn-orange:active{
+.html-login .btn-orange:active{
     transition: none;
     border-color:white;
     border-radius:4px;
 }
 
-html.html-login .msgErro {
+.html-login .msgErro {
     position: absolute;
     top: -40px;
     left: 0;
@@ -271,19 +271,35 @@ html.html-login .msgErro {
     overflow: hidden;
 }
 
-html.html-login .zopim {
+.html-login .zopim {
     margin-right:26% !important;
 }
 
+html.html-login .logo-expense-moby {
+  display: block;
+  width: 65px;
+  height: 95px;
+  background:transparent url('../images/login/logo-expense.png');
+  text-indent:-99999px;
+}
+
+html.html-login .logo-vaimoto {
+  display: block;
+  width: 228px;
+  height: 55px;
+  background:transparent url('../images/login/logo-vaimoto.png');
+  text-indent:-99999px;
+}
+
 @media screen and (max-width: 1169px) {
-    html.html-login .content-login{
+    .html-login .content-login{
         width: 100%!important;
     }
-    html.html-login .zopim {
+    .html-login .zopim {
         margin-right:30px!important;
     }
 
-    html.html-login .content-white {
+    .html-login .content-white {
         display:none;
     }
 }
