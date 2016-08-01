@@ -7,7 +7,10 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('images', function () {
     return gulp.src(
-        ['src/images/**/*.{ico,gif,jpg,jpeg,png,svg}'])
+        [
+            'src/images/**/*.{ico,gif,jpg,jpeg,png,svg}',
+            "!src/images/docs{/**,}",
+        ])
         .pipe(gulp.dest( 'dist/images' ));
 });
 
@@ -20,7 +23,8 @@ gulp.task('css', function () {
     gulp.src([
             'src/css/typography.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
-            'src/css/**/*.css'
+            'src/css/**/*.css',
+            '!src/docs.css'
         ])
         .pipe($.concatCss('wappa-uikit.css'))
         .pipe(gulp.dest('dist/css/'))
@@ -33,9 +37,11 @@ gulp.task('css', function () {
 gulp.task('browser-sync', function () {
     $.browserSync.instance = $.browserSync.init(
         [
-            'docs/**/*.html',
-            'docs/css/**/*.css',
-            'docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}'
+            'dist/**/*',
+            'src/**/*.html',
+            'src/css/**/*.css',
+            'src/scripts/**/*.js',
+            'src/images/**/*'
         ], {
             startPath: 'index.html',
             server: {

@@ -31,7 +31,7 @@ blockquote > :last-child {margin-bottom: 0;}
 /* Layout
 -------------------------------------------------------------- */
 .site-header {
-	background: url('../images/docs/bg-highlight2.jpg') fixed top left;
+	background: url('../images/bg-highlight2.jpg') fixed top left;
 	padding: 7em 0;
 	color: #fff;
 	text-align: center;

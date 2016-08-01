@@ -7,8 +7,6 @@
 *.seed
 .grunt
 
-#front
 node_modules/
 npm-debug.log
 .tmp/
-.sass-cache/
