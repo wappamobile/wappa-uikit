@@ -2329,6 +2329,11 @@ input[type="radio"].radio-person:checked + label span {
     padding: 5px 0;
 }
 
+.label{
+    padding-bottom: .215em;
+    font-size:70%;
+}
+
 .label-default{
     background:#797979;
 }
