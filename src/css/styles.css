@@ -1300,9 +1300,6 @@ div[class*="col-md"]:last-of-type {
 #leftPanel .nav ul li a:focus {
     color: #c9c9c9;
 }
-#leftPanel .nav ul li a:active {
-    background: #616161;
-}
 @media (min-width: 768px) and (max-width: 979px) {
     #leftPanel {
         left: -260px;
