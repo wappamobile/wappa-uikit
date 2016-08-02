@@ -1582,6 +1582,13 @@ select.select-icon {
 select.select-icon{
     padding-left: 38px;
 }
+@media all\0 {
+    select.select-icon{
+        height:auto;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+}
 select.select-default::-ms-expand,
 select.select-icon::-ms-expand {
     display: none;
