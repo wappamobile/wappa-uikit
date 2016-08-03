@@ -12105,6 +12105,10 @@ input[type="radio"].radio-person:checked + label span {
   background: #F05C58;
 }
 
+.input-group {
+  margin: 0;
+}
+
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child>.btn,
