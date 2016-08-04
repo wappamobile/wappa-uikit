@@ -518,6 +518,9 @@ div[class*="col-md"]:last-of-type {
 .font40 {
     font-size: 40px;
 }
+.font28 {
+    font-size: 28px;
+}
 .font26 {
     font-size: 26px;
 }
@@ -935,6 +938,9 @@ div[class*="col-md"]:last-of-type {
 }
 .margin-right-20 {
     margin-right: 20px!important;
+}
+.margin-right-25 {
+    margin-right: 25px!important;
 }
 .margin-right-30 {
     margin-right: 30px!important;
