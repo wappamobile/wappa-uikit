@@ -9872,7 +9872,7 @@ div[class*="col-md"]:last-of-type {
 }
 
 .border-circle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 /* Backgrounds */
