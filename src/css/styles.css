@@ -350,6 +350,9 @@ div[class*="col-md"]:last-of-type {
 .border-radius-2{
     border-radius:2px !important;
 }
+.border-circle{
+    border-radius:50%;
+}
 
 /* Backgrounds */
 .bgWhite {
