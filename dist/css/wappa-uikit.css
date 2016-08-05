@@ -9866,6 +9866,7 @@ div[class*="col-md"]:last-of-type {
   border-radius: 1px !important;
 }
 
+.border-radius,
 .border-radius-2 {
   border-radius: 2px !important;
 }
