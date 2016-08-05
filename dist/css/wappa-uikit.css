@@ -9902,6 +9902,86 @@ div[class*="col-md"]:last-of-type {
   background: #f9f9f9;
 }
 
+.bgPetterRiver {
+  background-color: #00A1F3;
+}
+
+.bgWappa {
+  background-color: #0099CC;
+}
+
+.bgTurquoise {
+  background-color: #1ABC9C;
+}
+
+.bgGreenSea {
+  background-color: #16A085;
+}
+
+.bgEmerald {
+  background-color: #A1CF17;
+}
+
+.bgNephritis {
+  background-color: #99CC00;
+}
+
+.bgAmethyst {
+  background-color: #9B59B6;
+}
+
+.bgVitoria {
+  background-color: #8E44AD;
+}
+
+.bgWetAsphalt {
+  background-color: #34495E;
+}
+
+.bgMidnightBlue {
+  background-color: #2C3E50;
+}
+
+.bgSunFlower {
+  background-color: #F1C40F;
+}
+
+.bgOrange {
+  background-color: #F39C12;
+}
+
+.bgCarrot {
+  background-color: #E67E22;
+}
+
+.bgPumpkin {
+  background-color: #D35400;
+}
+
+.bgAlizarin {
+  background-color: #F05C58;
+}
+
+.bgCerezo {
+  background-color: #E74C3C;
+}
+
+.bgClouds {
+  background-color: #ECF0F1;
+}
+
+.bgSilver {
+  background-color: #DCDCDC;
+}
+
+.bgVerme {
+  background-color: #797979;
+}
+
+.bgAsbestos {
+  background-color: #474746;
+}
+
 .boxShadowDefault {
   border: 1px solid #ccc;
   border-color: rgba(0,0,0,.2);
