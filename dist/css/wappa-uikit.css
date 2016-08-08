@@ -10784,6 +10784,16 @@ div[class*="col-md"]:last-of-type {
   z-index: 905;
 }
 
+#header .icon-logo15-preto-hor-4 {
+  display: block;
+  margin-left: 17px;
+  margin-top: -2px;
+  color: white;
+  font-size: 52px;
+  line-height: 69px;
+  height: 100%;
+}
+
 #header #logo-group {
   width: 260px;
   height: 100%;
@@ -11030,7 +11040,8 @@ div[class*="col-md"]:last-of-type {
     width: 68px;
   }
 
-  #header .logo-desktop {
+  #header .logo-desktop,
+  #header .icon-logo15-preto-hor-4 {
     display: none;
   }
 
