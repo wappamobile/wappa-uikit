@@ -10527,6 +10527,10 @@ div[class*="col-md"]:last-of-type {
   padding-top: 0!important;
 }
 
+.padding-top-5 {
+  padding-top: 5px!important;
+}
+
 .padding-top-10 {
   padding-top: 10px!important;
 }
@@ -10541,6 +10545,10 @@ div[class*="col-md"]:last-of-type {
 
 .padding-bottom-0 {
   padding-bottom: 0!important;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 5px!important;
 }
 
 .padding-bottom-10 {
