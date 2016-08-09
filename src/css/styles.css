@@ -1804,6 +1804,7 @@ input.text:focus {
 input.ng-invalid.ng-dirty, .text.error {
     border: none;
     border-bottom: solid 1px #f05c58 !important;
+    box-shadow: none;
 }
 
 .select.error {
