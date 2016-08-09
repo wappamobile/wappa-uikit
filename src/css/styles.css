@@ -124,6 +124,15 @@ label {
 .top-10 {
     top: 10px;
 }
+.top-15 {
+    top: 15px;
+}
+.top-20 {
+    top: 20px;
+}
+.top-25 {
+    top: 25px;
+}
 .right-0 {
     right: 0;
 }
@@ -132,6 +141,15 @@ label {
 }
 .right-10 {
     right: 10px;
+}
+.right-15 {
+    right: 15px;
+}
+.right-20 {
+    right: 20px;
+}
+.right-25 {
+    right: 25px;
 }
 .bottom-0 {
     bottom: 0;
@@ -142,8 +160,32 @@ label {
 .bottom-10 {
     bottom: 10px;
 }
+.bottom-15 {
+    bottom: 15px;
+}
+.bottom-20 {
+    bottom: 20px;
+}
+.bottom-25 {
+    bottom: 25px;
+}
 .left-0 {
     left: 0;
+}
+.left-5 {
+    left: 5px;
+}
+.left-10 {
+    left: 10px;
+}
+.left-15 {
+    left: 15px;
+}
+.left-20 {
+    left: 20px;
+}
+.left-25 {
+    left: 25px;
 }
 
 .no-border-box {
