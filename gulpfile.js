@@ -55,3 +55,12 @@ gulp.task('serve', ['browser-sync']);
 gulp.task('build', ['clean'], function () {
     gulp.start('css', 'fonts', 'images');
 });
+
+//inserir o código abaixo nos gulpfile.js das aplicações 
+gulp.task('wappa-uikit', function() {
+    gulp.src('bower_components/wappa-uikit/dist/images/**/*.{ico,gif,jpg,jpeg,png,svg}')
+        .pipe(gulp.dest('dist/images/'));
+
+    gulp.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest( 'dist/fonts/' ));
+});
