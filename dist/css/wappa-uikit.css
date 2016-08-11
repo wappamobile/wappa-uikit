@@ -12584,3 +12584,8 @@ input[type="radio"].radio-person:checked + label span {
   stroke-width: 1;
   stroke-linecap: round;
 }
+
+.clockpicker-button {
+  background: #0099cc;
+  color: white;
+}
