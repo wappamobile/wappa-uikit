@@ -9861,11 +9861,7 @@ div[class*="col-md"]:last-of-type {
 /* Border */
 
 .bordered {
-  border: 1px solid rgba(0, 0, 0, .2);
-}
-
-.bordered:hover {
-  border: 1px solid rgba(0, 0, 0, .4);
+  border: 1px solid rgba(0, 0, 0, .2) !important;
 }
 
 .borderBottom {
