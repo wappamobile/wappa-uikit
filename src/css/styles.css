@@ -2715,3 +2715,115 @@ input[type="radio"].radio-person:checked + label span {
     background: #e6e6e6;
     width: 8px;
 }
+
+/* clockpicker */
+.clockpicker-align-left.popover > .arrow {
+    left: 25px;
+}
+
+.clockpicker-popover .popover-title {
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clockpicker-popover .popover-title span {
+    cursor: pointer;
+}
+
+.clockpicker-popover .popover-content {
+    background-color: #f8f8f8;
+}
+
+.popover{
+    padding: 0;
+}
+
+.clockpicker-plate {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    user-select: none;
+}
+
+.clockpicker-canvas,
+.clockpicker-dial {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+
+.clockpicker-minutes {
+    visibility: hidden;
+}
+
+.clockpicker-tick {
+    border-radius: 50%;
+    line-height: 26px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.clockpicker-tick.active,
+.clockpicker-tick:hover {
+    background-color: #c0e5f7;
+    background-color: rgba(0, 149, 221, 0.25);
+}
+
+.clockpicker-button {
+    padding: 10px 0;
+}
+
+.clockpicker-dial {
+    transition: transform 350ms, opacity 350ms;
+}
+
+.clockpicker-dial-out {
+    opacity: 0;
+}
+
+.clockpicker-hours.clockpicker-dial-out {
+    transform: scale(1.2, 1.2);
+}
+
+.clockpicker-minutes.clockpicker-dial-out {
+    transform: scale(0.8, 0.8);
+}
+
+.clockpicker-canvas {
+    transition: opacity 175ms;
+}
+
+.clockpicker-canvas-out {
+    opacity: 0.25;
+}
+
+.clockpicker-canvas-bearing,
+.clockpicker-canvas-fg {
+    stroke: none;
+    fill: #0095dd;
+}
+
+.clockpicker-canvas-bg {
+    stroke: none;
+    fill: #c0e5f7;
+}
+
+.clockpicker-canvas-bg-trans {
+    fill: rgba(0, 149, 221, 0.25);
+}
+
+.clockpicker-canvas line {
+    stroke: #0095dd;
+    stroke-width: 1;
+    stroke-linecap: round;
+}
