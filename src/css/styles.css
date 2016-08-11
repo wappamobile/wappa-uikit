@@ -2827,3 +2827,142 @@ input[type="radio"].radio-person:checked + label span {
     stroke-width: 1;
     stroke-linecap: round;
 }
+
+/* Calendar */
+.ui-corner-all {
+    cursor: pointer;
+    user-select: none;
+}
+
+.ui-state-disabled {
+    cursor: not-allowed;
+}
+
+.ui-widget-content {
+    border: 1px solid #aaa;
+    background: white;
+    border-bottom-right-radius:2px;
+    border-bottom-left-radius: 2px;
+}
+
+/* Interaction states */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #adadad;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: alpha(opacity=35);
+}
+
+.ui-state-disabled .ui-icon {
+    filter: alpha(opacity=35);
+}
+
+.ui-datepicker {
+    width: 17em;
+    display: none;
+    padding: 4px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: .2em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover {
+    background: #0099cc;
+    color: white;
+    border-radius: 2px
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 50%;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    display: block;
+}
+
+.ui-datepicker-today a:hover {
+    background-color: #808080;
+    color: white;
+}
+
+.ui-datepicker-today a {
+    background-color: #BFBFBF;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.ui-datepicker td .ui-state-default {
+    padding: 5px;
+    text-align: center;
+}
+
+.ui-datepicker td .ui-state-highlight {
+    color: white;
+    background-color: #F05C58;
+    border-color: #F05C58;
+    border-radius: 2px;
+}
+
+.ui-datepicker td .ui-state-active {
+    color: #333;
+    background-color: #ebebeb;
+    border-radius: 2px;
+}
+
+.ui-datepicker td .ui-state-hover {
+    color: white;
+    background: #0099cc;
+    border-color: #0099cc;
+    border-radius: 2px;
+}
+
+.input-group-addon:last-child {
+    border: 1px solid #b8b8b8;
+}
