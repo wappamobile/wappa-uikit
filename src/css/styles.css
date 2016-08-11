@@ -494,6 +494,10 @@ div[class*="col-md"]:last-of-type {
     -webkit-box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, .1);
     box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, .1);
 }
+.boxShadowUp{
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
 
 /* Botões */
 .btn {
