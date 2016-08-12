@@ -9712,6 +9712,10 @@ button,
   width: 100%;
 }
 
+.h100 {
+  height: 100%;
+}
+
 .w50 {
   width: 50%;
 }
