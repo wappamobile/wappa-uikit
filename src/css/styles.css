@@ -587,7 +587,9 @@ div[class*="col-md"]:last-of-type {
     vertical-align: middle;
 }
 .btExcluir:hover,
-.btExcluir:active {
+.btExcluir:active,
+.hover-color-Alizarin:hover,
+.hover-color-Alizarin:active {
     color: #f05c58;
 }
 

@@ -10175,7 +10175,9 @@ div[class*="col-md"]:last-of-type {
 }
 
 .btExcluir:hover,
-.btExcluir:active {
+.btExcluir:active,
+.hover-color-Alizarin:hover,
+.hover-color-Alizarin:active {
   color: #f05c58;
 }
 
