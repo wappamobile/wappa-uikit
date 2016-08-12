@@ -10516,6 +10516,10 @@ div[class*="col-md"]:last-of-type {
   padding-top: 25px!important;
 }
 
+.padding-top-50 {
+  padding-top: 50px!important;
+}
+
 .padding-bottom-0 {
   padding-bottom: 0!important;
 }
@@ -10542,6 +10546,10 @@ div[class*="col-md"]:last-of-type {
 
 .padding-bottom-40 {
   padding-bottom: 40px !important;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px !important;
 }
 
 .no-padding>table tr td:last-child,
