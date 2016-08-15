@@ -768,6 +768,8 @@ div[class*="col-md"]:last-of-type {
     border-radius: 0;
     border-color: #bfbfbf;
     color: #404040;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 .header-search>input[type=text]:hover {
@@ -1674,6 +1676,8 @@ select.select-default,
 select.select-icon {
     font: normal 16px 'proxima_nova_rgregular';
     padding: 0 30px 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: 100%;
     width: 130%\9\0;
@@ -1852,6 +1856,8 @@ input.ng-invalid.ng-dirty, .text.error {
     border-radius: 0;
     background: #fff;
     color: #404040;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
