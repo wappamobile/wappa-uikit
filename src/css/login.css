@@ -221,10 +221,6 @@
     height: 50%;
 }
 
-.html-login .content-white > div:nth-of-type(2) {
-    background-color: #f7f8fa;
-}
-
 .html-login .content-white p {
     margin: 25px;
     font-size: 16px;
