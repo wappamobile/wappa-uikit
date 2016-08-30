@@ -2914,3 +2914,35 @@ input[type="radio"].radio-person:checked + label span {
 .input-group-addon:last-child {
     border: 1px solid #b8b8b8;
 }
+
+.select-tipo-taxi:hover .tipo-taxi-label,
+.select-tipo-taxi:focus .tipo-taxi-label{
+    color:#00a1f3;
+}
+
+.itaxiBlack:hover .tipo-taxi-label,
+.itaxiBlack:focus .tipo-taxi-label{
+    color:black;
+}
+
+.tipo-taxi-badge{
+    width: 30px;
+    height: 30px;
+}
+
+.select-tipo-taxi:hover .tipo-taxi-badge,
+.select-tipo-taxi:focus .tipo-taxi-badge,
+.TipoAtivo .tipo-taxi-badge{
+    background: #00a1f3;
+    color:white;
+}
+
+.itaxiBlack:hover .tipo-taxi-badge,
+.itaxiBlack:focus .tipo-taxi-badge,
+.itaxiBlack.TipoAtivo .tipo-taxi-badge{
+    background: black;
+    color:white;
+}
+.itaxiBlack.TipoAtivo .tipo-taxi-label{
+    color:black;
+}
