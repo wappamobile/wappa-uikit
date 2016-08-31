@@ -1032,6 +1032,9 @@ div[class*="col-md"]:last-of-type {
 .margin-left-10 {
     margin-left: 10px !important;
 }
+.margin-left-15 {
+    margin-left: 15px !important;
+}
 .margin-left-20 {
     margin-left: 20px !important;
 }
@@ -1046,6 +1049,9 @@ div[class*="col-md"]:last-of-type {
 }
 .margin-right-10 {
     margin-right: 10px!important;
+}
+.margin-right-15 {
+    margin-right: 15px!important;
 }
 .margin-right-20 {
     margin-right: 20px!important;
