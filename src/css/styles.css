@@ -330,7 +330,10 @@ div[class*="col-md"]:last-of-type {
 .bordered {
     border: 1px solid rgba(0, 0, 0, .2) !important;
 }
-
+.border-bottom{
+    border: none;
+    border-bottom:solid 1px #b8b8b8;
+}
 .borderBottom {
     border-bottom: solid 1px #eaeaea;
 }
