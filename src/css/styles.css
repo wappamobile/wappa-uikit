@@ -36,7 +36,7 @@ select,
 option {
     border: 1px solid transparent;
     color: #797979;
-    padding: 8px 0 4px;
+    padding: 10px 0 5px;
 }
 input:-webkit-autofill {
     background-color:white !important;
