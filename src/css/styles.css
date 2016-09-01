@@ -2955,3 +2955,50 @@ input[type="radio"].radio-person:checked + label span {
 .itaxiBlack.TipoAtivo .tipo-taxi-label{
     color:black;
 }
+
+/*Google Places*/
+.pac-container { 
+    width:500px !important;
+    border-radius:2px;
+}
+.pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+    background-image: none !important;
+    height: 0px;
+}
+
+.pac-item { 
+    width:480px !important;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.pac-item .pac-item-query {
+    font-size: 18px;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+.pac-item:hover .pac-item-query span::after {
+    content: 'Selecionar';
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 6px;
+    color: white;
+    background: #0099cc;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 2px
+}
+
+.pac-icon {
+  width: 0;
+  background-image: none;
+}
