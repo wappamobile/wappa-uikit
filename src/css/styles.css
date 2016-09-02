@@ -3030,3 +3030,7 @@ input[type="radio"].radio-person:checked + label span {
   width: 0;
   background-image: none;
 }
+
+.wrapper-maps {
+    height: 486px;
+}
