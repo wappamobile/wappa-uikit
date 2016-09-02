@@ -9925,6 +9925,16 @@ div[class*="col-md"]:last-of-type {
   border-radius: 2px !important;
 }
 
+.border-top-radius {
+  border-top-right-radius: 2px!important;
+  border-top-left-radius: 2px!important;
+}
+
+.border-bottom-radius {
+  border-bottom-right-radius: 2px!important;
+  border-bottom-left-radius: 2px!important;
+}
+
 .border-circle {
   border-radius: 50% !important;
 }
