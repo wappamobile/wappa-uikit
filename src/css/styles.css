@@ -385,6 +385,12 @@ div[class*="col-md"]:last-of-type {
 .no-border-radius {
     border-radius: 0;
 }
+.no-border-top {
+    border-top: none!important;
+}
+.no-border-bottom {
+    border-bottom: none!important;
+}
 .border-radius-1{
     border-radius:1px !important;
 }
