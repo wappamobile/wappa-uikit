@@ -286,6 +286,13 @@ div[class*="col-md"]:last-of-type {
     background: #f05c58;
     text-shadow: none;
 }
+.alert-danger ::-moz-selection {
+  background: #f05c58;
+}
+.alert-danger ::selection {
+  background: #f05c58;
+}
+
 .alert-warning {
     color: white;
     background: #F1C40F;
@@ -294,6 +301,13 @@ div[class*="col-md"]:last-of-type {
     color: white;
     background: #9dbe3b;
 }
+.alert-success ::-moz-selection {
+    background: #9dbe3b;
+}
+.alert-success ::selection {
+    background: #9dbe3b;
+}
+
 .alert-info {
     color: #305d8c;
     background: #d6dde7;
