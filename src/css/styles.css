@@ -3034,3 +3034,197 @@ input[type="radio"].radio-person:checked + label span {
 .wrapper-maps {
     height: 486px;
 }
+
+.wrapper-loader {
+    z-index: 3;
+}
+
+.wrapper-loader .overlay {
+    z-index: 1;
+}
+
+.wrapper-loader .container {
+    width: 278px;
+    z-index: 10;
+}
+
+.info-taxi .rating {
+    width: 145px;
+    height: 20px;
+    background: url('../images/stars.png') no-repeat;
+}
+
+.info-taxi .rating.r {
+    background-position: 0 -100px;
+}
+
+.info-taxi .rating.r1 {
+    background-position: 0 -80px;
+}
+
+.info-taxi .rating.r2 {
+    background-position: 0 -60px;
+}
+
+.info-taxi .rating.r3 {
+    background-position: 0 -40px;
+}
+
+.info-taxi .rating.r4 {
+    background-position: 0 -20px;
+}
+
+.info-taxi .rating.r5 {
+    background-position: 0 0;
+}
+
+.detalhesFavorito .text::-webkit-input-placeholder,
+.short-text::-webkit-input-placeholder {
+    font-style: italic;
+}
+.detalhesFavorito input.text:-ms-input-placeholder,
+.formComplemento input.text:-ms-input-placeholder {
+    font-style: italic;
+}
+.formComplemento input.text::-moz-placeholder,
+.formComplemento input.text::-moz-placeholder {
+    font-style: italic;
+}
+
+.found-taxi-pin-light-move, 
+.found-taxi-pin-light,
+.found-taxi-pin, 
+.found-taxi-zone {
+  background: url('../images/found-taxi-sprite.png') no-repeat;
+}
+
+.found-taxi-zone{
+    height: 250px;
+    background-position: 0 -858px;
+    transform: translate3d(0, 0, 0);
+}
+.found-taxi-lighters{
+    width: 242px;
+    height:1596px;
+    background: url('../images/found-taxi-lighters.png');
+    animation: moveSlideshow 30s linear infinite;
+}
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateY(-33%);  
+    }
+}
+.found-taxi-pin, .found-taxi-pin-light, .found-taxi-pin-light-move {
+    width: 242px;
+    height: 266px;
+}
+.found-taxi-pin{
+    background-position: 0 -572px;
+}
+.found-taxi-pin-light{
+    background-position: 0 -286px;
+    animation: fadeinout 2s linear infinite;
+}
+.found-taxi-pin-light-move{
+    background-position: 0 0;
+    animation: fadeinout 2s linear infinite;
+}
+
+.progress-loading-radius,
+.progress-loading-bg-radius-0,
+.progress-loading-bg-radius-25, 
+.progress-loading-bg-radius-50, 
+.progress-loading-bg-radius-75, 
+.progress-loading-bg-radius-100,
+.progress-loading-pin-place {
+    background: url('../images/progress-loadings-sprite.png') no-repeat;
+}
+
+.progress-loading, 
+.progress-loading-radius, 
+.progress-loading-pin-place, 
+.progress-loading-bg-radius-0,
+.progress-loading-bg-radius-25,
+.progress-loading-bg-radius-50,
+.progress-loading-bg-radius-75,
+.progress-loading-bg-radius-100 {
+    width: 251px;
+    height: 251px;
+}
+.progress-loading-radius{
+    background-position: 0 -1897px;
+    animation:spin 2s linear infinite;
+}
+@keyframes spin { 
+    100% { 
+        transform:rotate(360deg); 
+    }
+}
+
+.progress-loading-pin-place{
+    background-position: 0 -1355px;
+    animation: animationFrames 1s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+    0% {
+        transform:  translate(0px,0px)  ;
+    }
+    15% {
+        transform:  translate(0px,-5px)  ;
+    }
+    30% {
+        transform:  translate(0px,0px)  ;
+    }
+    45% {
+        transform:  translate(0px,-5px)  ;
+    }
+    60% {
+        transform:  translate(0px,0px)  ;
+    }
+    75% {
+        transform:  translate(0px,0px)  ;
+    }
+    100% {
+        transform:  translate(0px,0px)  ;
+    }
+}
+
+.progress-loading-bg-radius-0, .progress-loading-bg-radius-25,
+.progress-loading-bg-radius-50, .progress-loading-bg-radius-75, .progress-loading-bg-radius-100 {
+    animation: fadeinout 3s linear infinite;
+    opacity: 0;
+}
+.progress-loading-bg-radius-0{
+    background-position: 0 0;
+    animation-delay: 0, 1s;
+}
+.progress-loading-bg-radius-25{
+    background-position: 0 -542px;
+    animation-delay: 2s, 1s;
+}
+.progress-loading-bg-radius-50{
+    background-position: 0 -813px;
+    animation-delay: 3s, 1s;
+}
+.progress-loading-bg-radius-75{
+    background-position: 0 -1084px;
+    animation-delay: 4s, 1s;
+}
+.progress-loading-bg-radius-100{
+    background-position: 0 -271px;
+    animation-delay: 5s, 1s;
+}
+@keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+.progress-loading-x{
+    width: 35px;
+    height: 35px;
+}
+.progress-loading-x .icon-x{
+    top:.083em;
+    left:-.03em;
+}
