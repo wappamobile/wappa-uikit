@@ -3051,7 +3051,7 @@ input[type="radio"].radio-person:checked + label span {
 .info-taxi .rating {
     width: 145px;
     height: 20px;
-    background: url('../images/stars.png') no-repeat;
+    background: url('../images/call-taxi/stars.png') no-repeat;
 }
 
 .info-taxi .rating.r {
@@ -3078,24 +3078,11 @@ input[type="radio"].radio-person:checked + label span {
     background-position: 0 0;
 }
 
-.detalhesFavorito .text::-webkit-input-placeholder,
-.short-text::-webkit-input-placeholder {
-    font-style: italic;
-}
-.detalhesFavorito input.text:-ms-input-placeholder,
-.formComplemento input.text:-ms-input-placeholder {
-    font-style: italic;
-}
-.formComplemento input.text::-moz-placeholder,
-.formComplemento input.text::-moz-placeholder {
-    font-style: italic;
-}
-
 .found-taxi-pin-light-move, 
 .found-taxi-pin-light,
 .found-taxi-pin, 
 .found-taxi-zone {
-  background: url('../images/found-taxi-sprite.png') no-repeat;
+  background: url('../images/call-taxi/found-taxi-sprite.png') no-repeat;
 }
 
 .found-taxi-zone{
@@ -3106,7 +3093,7 @@ input[type="radio"].radio-person:checked + label span {
 .found-taxi-lighters{
     width: 242px;
     height:1596px;
-    background: url('../images/found-taxi-lighters.png');
+    background: url('../images/call-taxi/found-taxi-lighters.png');
     animation: moveSlideshow 30s linear infinite;
 }
 @keyframes moveSlideshow {
@@ -3137,7 +3124,7 @@ input[type="radio"].radio-person:checked + label span {
 .progress-loading-bg-radius-75, 
 .progress-loading-bg-radius-100,
 .progress-loading-pin-place {
-    background: url('../images/progress-loadings-sprite.png') no-repeat;
+    background: url('../images/call-taxi/progress-loadings-sprite.png') no-repeat;
 }
 
 .progress-loading, 
@@ -3166,28 +3153,27 @@ input[type="radio"].radio-person:checked + label span {
     animation: animationFrames 1s linear infinite;
     transform-origin: 50% 50%;
 }
-
 @keyframes animationFrames{
     0% {
-        transform:  translate(0px,0px)  ;
+        transform:  translate(0px,0px);
     }
     15% {
-        transform:  translate(0px,-5px)  ;
+        transform:  translate(0px,-5px);
     }
     30% {
-        transform:  translate(0px,0px)  ;
+        transform:  translate(0px,0px);
     }
     45% {
-        transform:  translate(0px,-5px)  ;
+        transform:  translate(0px,-5px);
     }
     60% {
-        transform:  translate(0px,0px)  ;
+        transform:  translate(0px,0px);
     }
     75% {
-        transform:  translate(0px,0px)  ;
+        transform:  translate(0px,0px);
     }
     100% {
-        transform:  translate(0px,0px)  ;
+        transform:  translate(0px,0px);
     }
 }
 
