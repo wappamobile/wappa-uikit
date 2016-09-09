@@ -1,6 +1,6 @@
 {
   "name": "wappa-uikit",
-  "version": "0.4.5",
+  "version": "0.11.1",
   "description": "Wappa User Interface Kit",
   "repository": {
     "type": "git",
@@ -22,8 +22,7 @@
     "node": ">=4.0.0"
   },
   "readme": "README.md",
-  "license": "proprietary",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.7"
   },
