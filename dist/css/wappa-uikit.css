@@ -13179,3 +13179,8 @@ input[type="radio"].radio-person:checked + label span {
   top: .083em;
   left: -.03em;
 }
+
+.tipo-taxi-badge {
+  width: 30px;
+  height: 30px;
+}
