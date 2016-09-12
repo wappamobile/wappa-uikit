@@ -10058,7 +10058,6 @@ div[class*="col-md"]:last-of-type {
   border: 1px solid #ccc;
   border-color: rgba(0,0,0,.2);
   box-shadow: 0 2px 10px rgba(0,0,0,.2);
-  border-radius: 2px;
 }
 
 .bgShadow {
