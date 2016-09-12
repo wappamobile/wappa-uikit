@@ -10887,7 +10887,6 @@ div[class*="col-md"]:last-of-type {
 #header {
   height: 61px;
   background: #1f54a7;
-  overflow: hidden;
   position: relative;
   z-index: 905;
 }
