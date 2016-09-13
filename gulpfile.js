@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var exec = require('child_process').exec;
 var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'del', 'browser-sync']
 });
@@ -52,7 +53,31 @@ gulp.task('clean', function(done) {
 
 gulp.task('serve', ['browser-sync']);
 
-gulp.task('build', ['clean'], function () {
+gulp.task('icomoon-update', function (cb) {
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot > src/fonts/icomoon.eot');
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.svg > src/fonts/icomoon.svg');
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.ttf > src/fonts/icomoon.ttf');
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff > src/fonts/icomoon.woff');
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff2 > src/fonts/icomoon.woff2');
+    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/style.css > src/css/icons.css', function(err){
+        cb(err);
+
+        var file = 'src/css/icons.css';
+        var fs = require('fs');
+        fs.readFile(file, 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            var result = data.replace('https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot', '../fonts/icomoon.eot');
+
+            fs.writeFile(file, result, 'utf8', function (err) {
+                if (err) return console.log(err);
+            });
+        });
+    });
+});
+
+gulp.task('build', ['clean', 'icomoon-update'], function () {
     gulp.start('css', 'fonts', 'images');
 });
 
@@ -64,3 +89,5 @@ gulp.task('wappa-uikit', function() {
     gulp.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
         .pipe(gulp.dest( 'dist/fonts/' ));
 });
+
+
