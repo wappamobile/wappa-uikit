@@ -36,7 +36,8 @@ gulp.task('browser-sync', function () {
         [
             'docs/**/*.html',
             'docs/css/**/*.css',
-            'docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}'
+            'docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}',
+            'src/css/**/*.css'
         ], {
             startPath: 'index.html',
             server: {
