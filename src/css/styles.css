@@ -1781,7 +1781,7 @@ select.select-icon::-ms-expand {
 input[required].ng-pristine,
 input[required].ng-dirty,
 input.ng-pristine.ng-valid,
-input.text,
+.text,
 .editable-input.ng-pristine.ng-valid,
 .form-control {
     border: none;
@@ -1801,9 +1801,9 @@ input.ng-pristine.ng-valid:focus,
 .editable-input.ng-pristine.ng-valid:active,
 input[required].ng-pristine:focus,
 input[required].ng-dirty:focus,
-input.text:hover,
-input.text:active,
-input.text:focus {
+.text:hover,
+.text:active,
+.text:focus {
     border: none;
     border-bottom: solid 1px #0099cc;
 }
@@ -1848,6 +1848,10 @@ input.ng-invalid.ng-dirty, .text.error {
 }
 .text[disabled]:-ms-input-placeholder {
     color: #dcdcdc;
+}
+
+textarea {
+    resize: none; 
 }
 
 .smart-form *,
