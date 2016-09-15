@@ -9509,7 +9509,7 @@ h1 {
   margin: 0 0 12px;
 }
 
-input,
+.text,
 select,
 option {
   border: 1px solid transparent;
@@ -11677,11 +11677,27 @@ input[required].ng-dirty:focus,
   border-bottom: solid 1px #0099cc;
 }
 
+.text-inset {
+  border: solid 1px #b8b8b8;
+  border-radius: 2px;
+  color: #797979;
+  padding: 8px 10px 6px;
+}
+
+.text-inset:hover,
+.text-inset:active {
+  border-color: #0099cc;
+}
+
 input.ng-invalid.ng-dirty,
 .text.error {
   border: none;
   border-bottom: solid 1px #f05c58 !important;
   box-shadow: none;
+}
+
+.text-inset.error {
+  border-color: #f05c58;
 }
 
 .select.error {
@@ -11701,6 +11717,10 @@ input.ng-invalid.ng-dirty,
   border-bottom: solid 1px #99cc00 !important;
 }
 
+.text-inset.valid {
+  border-color: #99cc00;
+}
+
 .text[disabled] {
   background: transparent;
   border: none;
@@ -11709,19 +11729,30 @@ input.ng-invalid.ng-dirty,
   cursor: not-allowed;
 }
 
-.text[disabled]::-webkit-input-placeholder {
+.text-inset[disabled] {
+  border-color: #dcdcdc;
+  background: transparent;
+  color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.text[disabled]::-webkit-input-placeholder,
+.text-inset[disabled]::-webkit-input-placeholder {
   color: #dcdcdc;
 }
 
-.text[disabled]:-moz-placeholder {
+.text[disabled]:-moz-placeholder,
+.text-inset[disabled]:-moz-placeholder {
   color: #dcdcdc;
 }
 
-.text[disabled]::-moz-placeholder {
+.text[disabled]::-moz-placeholder,
+.text-inset[disabled]::-moz-placeholder {
   color: #dcdcdc;
 }
 
-.text[disabled]:-ms-input-placeholder {
+.text[disabled]:-ms-input-placeholder,
+.text-inset[disabled]:-ms-input-placeholder {
   color: #dcdcdc;
 }
 
