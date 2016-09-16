@@ -11683,6 +11683,7 @@ input[required].ng-dirty:focus,
 }
 
 .text-autosize {
+  background: white;
   min-height: 36px;
 }
 
