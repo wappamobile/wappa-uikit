@@ -1809,6 +1809,9 @@ input[required].ng-dirty:focus,
     color: #797979;
     padding: 8px 10px 6px;   
 }
+.text-autosize {
+    min-height: 36px;
+}
 
 .text-inset:hover,
 .text-inset:active {

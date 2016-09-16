@@ -9,8 +9,14 @@
 
     <link rel="shortcut icon" href="images/favicon.ico">
     
-    <link rel="stylesheet" href="../dist/css/wappa-uikit.min.css">
+    <!--link rel="stylesheet" href="../dist/css/wappa-uikit.min.css"-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../src/css/typography.css">
+    <link rel="stylesheet" href="../src/css/icons.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+
     <link rel="stylesheet" href="css/docs.css">
+
 </head>
 <body>
     <div class="site-header-demo">
@@ -122,6 +128,41 @@
                 <textarea class="text-inset w100" disabled placeholder="Disabled" rows="3"></textarea>
             </div>
         </div>
+
+        <h3 class="font26 fontLight margin-top-40">Text auto size</h3>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="text text-autosize w100" contentEditable="true"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text text-autosize w100 error" contentEditable="true"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text text-autosize w100 valid" contentEditable="true"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text text-autosize w100" disabled contentEditable="true"></div>
+            </div>
+        </div>
+
+        <h3 class="font26 fontLight margin-top-40">Text inset auto size</h3>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="text-inset text-autosize w100" contentEditable="true" placeholder="Inactive"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text-inset text-autosize w100 error" contentEditable="true" placeholder="Error"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text-inset text-autosize w100 valid" contentEditable="true" placeholder="Success"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="text-inset text-autosize w100" contentEditable="true" disabled placeholder="Disabled"></div>
+            </div>
+        </div>
+
 
         <h3 class="font26 fontLight margin-top-40">Select</h3>
 
