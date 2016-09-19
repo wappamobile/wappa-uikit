@@ -1775,7 +1775,6 @@ select.select-icon::-ms-expand {
 /* forms */
 input[required].ng-pristine,
 input[required].ng-dirty,
-input.ng-pristine.ng-valid,
 .text,
 .editable-input.ng-pristine.ng-valid,
 .form-control {
@@ -1789,9 +1788,6 @@ input[required].ng-dirty:active,
 form .input:hover input,
 form .input:active input,
 form .input:focus input,
-input.ng-pristine.ng-valid:hover,
-input.ng-pristine.ng-valid:active,
-input.ng-pristine.ng-valid:focus,
 .editable-input.ng-pristine.ng-valid:hover,
 .editable-input.ng-pristine.ng-valid:active,
 input[required].ng-pristine:focus,
