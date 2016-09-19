@@ -11687,6 +11687,10 @@ input[required].ng-dirty:focus,
   min-height: 36px;
 }
 
+[contenteditable=true]:empty:not(:focus):before {
+  content: attr(placeholder);
+}
+
 .text-inset:hover,
 .text-inset:active {
   border-color: #0099cc;
