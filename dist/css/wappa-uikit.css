@@ -12520,7 +12520,7 @@ input[type="radio"].radio-person:checked + label span {
   position: relative;
   display: block;
   white-space: nowrap;
-  border: 1px solid #ddd;
+  border: 1px solid #b8b8b8;
   background: white;
   border-radius: 2px;
   height: 36px;
@@ -12555,6 +12555,7 @@ input[type="radio"].radio-person:checked + label span {
 .chosen-container-single .chosen-search input[type="text"] {
   padding: 4px 0;
   width: 100%;
+  border: 0;
   border-bottom: solid 1px #b8b8b8;
 }
 
