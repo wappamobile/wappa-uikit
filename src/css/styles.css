@@ -1773,25 +1773,17 @@ select.select-icon::-ms-expand {
 }
 
 /* forms */
-input[required].ng-pristine,
-input[required].ng-dirty,
 .text,
 .editable-input.ng-pristine.ng-valid,
 .form-control {
     border: none;
     border-bottom: solid 1px #b8b8b8;
 }
-input[required].ng-pristine:hover,
-input[required].ng-pristine:active,
-input[required].ng-dirty:hover,
-input[required].ng-dirty:active,
 form .input:hover input,
 form .input:active input,
 form .input:focus input,
 .editable-input.ng-pristine.ng-valid:hover,
 .editable-input.ng-pristine.ng-valid:active,
-input[required].ng-pristine:focus,
-input[required].ng-dirty:focus,
 .text:hover,
 .text:active,
 .text:focus {
@@ -1818,7 +1810,7 @@ input[required].ng-dirty:focus,
     border-color: #0099cc;   
 }
 
-input.ng-invalid.ng-dirty, .text.error {
+.text.error {
     border: none;
     border-bottom: solid 1px #f05c58 !important;
     box-shadow: none;
