@@ -32,15 +32,16 @@ h1 {
 }
 
 .text,
-select,
-option {
+select {
     border: 1px solid transparent;
     color: #797979;
     padding: 10px 0 5px;
 }
+
 select {
     background: transparent;
 }
+
 a {
     color:#0099cc;
     text-decoration: none !important;
@@ -1659,16 +1660,15 @@ div[class*="col-md"]:last-of-type {
 }
 
 /* select */
-.select {
+.select-inset {
     border: 1px solid #b8b8b8;
     position: relative;
     padding: 0 !important;
     overflow: hidden;
-    background: white;
     transition: all 0.2s ease;
-    border-radius:2px;
+    border-radius: 2px;
 }
-.select:before {
+.select-inset:before {
     content: '';
     width: 0;
     height: 0;
@@ -1679,7 +1679,7 @@ div[class*="col-md"]:last-of-type {
     bottom: 20px;
     right: 10px;
 }
-.select:after {
+.select-inset:after {
     content: '';
     width: 0;
     height: 0;
@@ -1691,8 +1691,8 @@ div[class*="col-md"]:last-of-type {
     right: 10px;
 }
 
-.select [class^="icon-"],
-.select [class*=" icon-"] {
+.select-inset [class^="icon-"],
+.select-inset [class*=" icon-"] {
     font-size: 16px;
     height: 18px;
     position: absolute;
@@ -1701,8 +1701,8 @@ div[class*="col-md"]:last-of-type {
     left: 10px;
     margin: auto 0;
 }
-select.select-default,
-select.select-icon {
+.select-inset select.select-default,
+.select-inset select.select-icon {
     font: normal 16px 'proxima_nova_rgregular';
     padding: 0 30px 0 10px;
     -webkit-appearance: none;
@@ -1715,32 +1715,41 @@ select.select-icon {
     position: relative;
     z-index: 1;
 }
-select.select-icon{
+.select-inset select.select-icon{
     padding-left: 38px;
 }
 @media all\0 {
-    select.select-icon{
+    .select-inset select.select-icon{
         height:auto;
         padding-top: 8px;
         padding-bottom: 5px;
     }
 }
-select.select-default::-ms-expand,
-select.select-icon::-ms-expand {
+.select-inset select.select-default::-ms-expand,
+.select-inset select.select-icon::-ms-expand {
     display: none;
 }
-.select:hover,
-.select:active {
+.select-inset:hover,
+.select-inset:active {
     color: #0099cc;
     border: 1px solid #0099cc;   
 }
-.select:hover::before,
-.select:active::before {
+.select-inset:hover::before,
+.select-inset:active::before {
     border-color: transparent transparent #0099cc transparent;
 }
-.select:hover::after,
-.select:active::after {
+.select-inset:hover::after,
+.select-inset:active::after {
     border-color: #0099cc transparent transparent transparent;
+}
+.select-inset.error {
+    border-color: #f05c58;
+}
+.select-inset.valid {
+    border-color: #A1CF17;
+}
+.select-inset select[disabled]{
+    cursor: not-allowed; 
 }
 
 /* cartao */
@@ -1820,18 +1829,6 @@ form .input:focus input,
     border-color: #f05c58;
 }
 
-.select.error {
-    border-color: #f05c58;
-}
-
-.select.valid {
-    border-color: #A1CF17;
-}
-
-.select select[disabled]{
-    cursor: not-allowed; 
-}
-
 .text.valid {
     border: none;
     border-bottom: solid 1px #99cc00 !important;
@@ -1877,6 +1874,47 @@ textarea {
     resize: none; 
 }
 
+/* .select {
+    border: none;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    overflow: hidden;
+}
+.select select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    width: 130%\9\0;
+    height: 36px;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    padding: 5px 25px 5px 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #b8b8b8;
+    color: #797979;
+    font-family: 'proxima_novalight';
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+.select select::-ms-expand {
+    display: none;
+}
+.select select:hover,
+.select select:active {
+    border-bottom: solid 1px #0099cc;
+}
+
+
+select.ng-invalid.ng-dirty {
+    border: none;
+    border-bottom: solid 1px #f05c58 !important;
+    color: #f05c58 !important;
+} */
+
 .smart-form *,
 .smart-form:after,
 .smart-form:before {
@@ -1892,19 +1930,14 @@ textarea {
 }
 .smart-form .checkbox,
 .smart-form .input,
-.smart-form .radio,
-.smart-form .select {
+.smart-form .radio {
     background: none;
     border: none;
     position: relative;
     display: block;
     font-weight: 400;
 }
-.smart-form .select {
-    overflow: hidden;
-}
-.smart-form .input input,
-.smart-form .select select {
+.smart-form .input input {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -1935,32 +1968,6 @@ textarea {
 .smart-form .checkbox input[type=checkbox] {
     margin-left: 0;
     position: relative;
-}
-
-.smart-form .select select {
-    width: 100%;
-    width: 130%\9\0;
-    padding: 5px 25px 5px 0;
-    background: transparent;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #b8b8b8;
-    color: #797979;
-    font-family: 'proxima_novalight';
-    font-size: 18px;
-    position: relative;
-    z-index: 1;
-}
-.smart-form .select select::-ms-expand {
-    display: none;
-}
-.smart-form select.ng-invalid.ng-dirty {
-    border: none;
-    border-bottom: solid 1px #f05c58 !important;
-    color: #f05c58 !important;
-}
-.smart-form .select select:hover,
-.smart-form .select select:active {
-    border-bottom: solid 1px #0099cc;
 }
 
 .smart-form .radio {

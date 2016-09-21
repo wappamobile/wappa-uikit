@@ -9,12 +9,12 @@
 
     <link rel="shortcut icon" href="images/favicon.ico">
     
-    <link rel="stylesheet" href="../dist/css/wappa-uikit.min.css">
+    <!--link rel="stylesheet" href="../dist/css/wappa-uikit.min.css"-->
 
-    <!--link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../src/css/typography.css">
     <link rel="stylesheet" href="../src/css/icons.css">
-    <link rel="stylesheet" href="../src/css/styles.css"-->
+    <link rel="stylesheet" href="../src/css/styles.css">
 
     <link rel="stylesheet" href="css/docs.css">
 
@@ -164,7 +164,6 @@
             </div>
         </div>
 
-
         <h3 class="font26 fontLight margin-top-40">Select</h3>
 
         <div class="row">
@@ -210,6 +209,51 @@
             </div>
         </div>
         
+        <h3 class="font26 fontLight margin-top-40">Select inset</h3>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <label class="select-inset col-xs-12">
+                    <select class="col-xs-12 select-default">
+                        <option value="10">Últimos 10 dias</option>
+                        <option value="20">Últimos 20 dias</option>
+                        <option value="30">Últimos 30 dias</option>
+                        <option value="0">Mês corrente</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-xs-3">
+                <label class="select-inset col-xs-12 error">
+                    <select class="col-xs-12 select-default">
+                        <option value="10">Últimos 10 dias</option>
+                        <option value="20">Últimos 20 dias</option>
+                        <option value="30">Últimos 30 dias</option>
+                        <option value="0">Mês corrente</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-xs-3">
+                <label class="select-inset col-xs-12 valid">
+                    <select class="col-xs-12 select-default">
+                        <option value="10">Últimos 10 dias</option>
+                        <option value="20">Últimos 20 dias</option>
+                        <option value="30">Últimos 30 dias</option>
+                        <option value="0">Mês corrente</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-xs-3">
+                <label class="select-inset col-xs-12">
+                    <select class="col-xs-12 select-default" disabled>
+                        <option value="10">Últimos 10 dias</option>
+                        <option value="20">Últimos 20 dias</option>
+                        <option value="30">Últimos 30 dias</option>
+                        <option value="0">Mês corrente</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        
         <h3 class="font26 fontLight margin-top-40">Navbar</h3>
         
         <div id="header" class="relative">
@@ -240,7 +284,7 @@
 
                 <div id="dados" class="pull-left">
                     <a href="DadosCadastro.aspx" title="Meus dados" class="display-inline-block">
-                        <i class="icon-user pull-left margin-right-10"></i>
+                        <i class="icon-user pull-left margin-right-5"></i>
                         <div class="user-info pull-left">
                             <span class="fontReg display-block font15">
                                 Nelson Francisco
