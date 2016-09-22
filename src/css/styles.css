@@ -1696,15 +1696,16 @@ div[class*="col-md"]:last-of-type {
     border-bottom: solid 1px #b8b8b8;
 }
 
-.text {
+.text,
+.text-inset {
+    line-height: 36px;
+    min-height: 36px;
     color: #797979;
-    padding: 10px 0 5px;
 }
 .text-inset {
     border: solid 1px #b8b8b8;
     border-radius: 2px;
-    color: #797979;
-    padding: 8px 10px 6px;   
+    padding: 0 10px; 
 }
 
 .editable-input.ng-pristine.ng-valid:hover,
@@ -1758,24 +1759,22 @@ div[class*="col-md"]:last-of-type {
     color:  #797979;
     width: 100%;
     width: 130%\9\0;
-    height: 36px;
     font-size: 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;    
     z-index: 1;
     outline: 0;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
 .select select {
-    display: block;
-    box-sizing: border-box;
-    padding: 6px 25px 5px 0;
+    padding-left: 0;
+    padding-right: 25px;
 }
-.select-inset select.select-default,
-.select-inset select.select-icon {
-    padding: 3px 30px 0 10px;
-    position: relative;
+.select-inset select {
+    padding-left: 10px;
 }
 .select select::-ms-expand {
     display: none;
@@ -1804,6 +1803,10 @@ div[class*="col-md"]:last-of-type {
     border-color: #797979 transparent transparent transparent;
     bottom: 12px;
 }
+.select:before, 
+.select:after {
+    right: 0;
+} 
 .select-inset [class^="icon-"],
 .select-inset [class*=" icon-"] {
     font-size: 16px;
