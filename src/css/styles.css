@@ -1807,6 +1807,8 @@ div[class*="col-md"]:last-of-type {
 .select:after {
     right: 0;
 } 
+.select [class^="icon-"],
+.select [class*=" icon-"],
 .select-inset [class^="icon-"],
 .select-inset [class*=" icon-"] {
     font-size: 16px;
@@ -1814,10 +1816,17 @@ div[class*="col-md"]:last-of-type {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 10px;
+    left: 0;
     margin: auto 0;
+    color: #0099CC;
 }
-.select-inset select.select-icon{
+.select-inset [class^="icon-"] {
+    left: 10px;
+}
+.select select.select-icon {
+    padding-left: 28px;
+}
+.select-inset select.select-icon {
     padding-left: 38px;
 }
 @media all\0 {
@@ -1872,10 +1881,16 @@ div[class*="col-md"]:last-of-type {
     color: #dcdcdc;
     cursor: not-allowed;
 }
-.select.disabled:before, .select-inset.disabled:before {
+.select.disabled [class^="icon-"],
+.select-inset.disabled [class^="icon-"] {
+    color: #dcdcdc;
+}
+.select.disabled:before, 
+.select-inset.disabled:before {
     border-color: transparent transparent #dcdcdc transparent;  
 }
-.select.disabled:after, .select-inset.disabled:after {
+.select.disabled:after, 
+.select-inset.disabled:after {
     border-color: #dcdcdc transparent transparent transparent;
 }
 
@@ -2215,7 +2230,11 @@ input[type="radio"].radio-person:checked + label span {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover, .pagination > .active > a:focus,
+.pagination > .active > span:focus{
     background-color: #00A1F3;
     border-color: #0099cc;
 }
@@ -2223,7 +2242,9 @@ input[type="radio"].radio-person:checked + label span {
 .pagination > li > a, .pagination > li > span{
     color:#0099cc;
 }
-.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,.pagination > li > span:focus{
     color:#00A1F3;
 }
 
@@ -3170,8 +3191,11 @@ input[type="radio"].radio-person:checked + label span {
     }
 }
 
-.progress-loading-bg-radius-0, .progress-loading-bg-radius-25,
-.progress-loading-bg-radius-50, .progress-loading-bg-radius-75, .progress-loading-bg-radius-100 {
+.progress-loading-bg-radius-0,
+.progress-loading-bg-radius-25,
+.progress-loading-bg-radius-50,
+.progress-loading-bg-radius-75,
+.progress-loading-bg-radius-100 {
     animation: fadeinout 3s linear infinite;
     opacity: 0;
 }
