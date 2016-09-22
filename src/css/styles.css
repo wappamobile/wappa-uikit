@@ -1660,6 +1660,48 @@ div[class*="col-md"]:last-of-type {
 }
 
 /* select */
+.select {
+    border: none;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #b8b8b8;
+    transition: all 0.2s ease;
+}
+.select select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    width: 130%\9\0;
+    height: 36px;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    padding: 6px 25px 5px 0;
+    font-size: 16px;
+    z-index: 1;
+}
+.select select::-ms-expand {
+    display: none;
+}
+.select:hover,
+.select:active {
+    border-bottom: solid 1px #0099cc;
+}
+.select.error {
+    border-bottom-color: #f05c58;
+}
+.select.valid {
+    border-bottom-color: #A1CF17;
+}
+.select.disabled {
+    border-bottom-color: #dcdcdc;
+}
+
 .select-inset {
     border: 1px solid #b8b8b8;
     position: relative;
@@ -1668,7 +1710,7 @@ div[class*="col-md"]:last-of-type {
     transition: all 0.2s ease;
     border-radius: 2px;
 }
-.select-inset:before {
+.select:before, .select-inset:before {
     content: '';
     width: 0;
     height: 0;
@@ -1678,8 +1720,9 @@ div[class*="col-md"]:last-of-type {
     position: absolute;
     bottom: 20px;
     right: 10px;
+    transition: all 0.2s ease;
 }
-.select-inset:after {
+.select:after, .select-inset:after {
     content: '';
     width: 0;
     height: 0;
@@ -1689,6 +1732,7 @@ div[class*="col-md"]:last-of-type {
     position: absolute;
     bottom: 12px;
     right: 10px;
+    transition: all 0.2s ease;
 }
 
 .select-inset [class^="icon-"],
@@ -1703,8 +1747,8 @@ div[class*="col-md"]:last-of-type {
 }
 .select-inset select.select-default,
 .select-inset select.select-icon {
-    font: normal 16px 'proxima_nova_rgregular';
-    padding: 0 30px 0 10px;
+    font-size: 16px;
+    padding: 3px 30px 0 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1734,10 +1778,14 @@ div[class*="col-md"]:last-of-type {
     color: #0099cc;
     border: 1px solid #0099cc;   
 }
+.select:hover::before,
+.select:active::before,
 .select-inset:hover::before,
 .select-inset:active::before {
     border-color: transparent transparent #0099cc transparent;
 }
+.select:hover::after,
+.select:active::after,
 .select-inset:hover::after,
 .select-inset:active::after {
     border-color: #0099cc transparent transparent transparent;
@@ -1745,11 +1793,45 @@ div[class*="col-md"]:last-of-type {
 .select-inset.error {
     border-color: #f05c58;
 }
+.select.error:hover::before,
+.select.error:active::before,
+.select-inset.error:hover::before,
+.select-inset.error:active::before {
+    border-color: transparent transparent #f05c58 transparent;
+}
+.select.error:hover::after,
+.select.error:active::after,
+.select-inset.error:hover::after,
+.select-inset.error:active::after {
+    border-color: #f05c58 transparent transparent transparent;
+}
 .select-inset.valid {
     border-color: #A1CF17;
 }
-.select-inset select[disabled]{
-    cursor: not-allowed; 
+.select.valid:hover::before,
+.select.valid:active::before,
+.select-inset.valid:hover::before,
+.select-inset.valid:active::before {
+    border-color: transparent transparent #A1CF17 transparent;
+}
+.select.valid:hover::after,
+.select.valid:active::after,
+.select-inset.valid:hover::after,
+.select-inset.valid:active::after {
+    border-color: #A1CF17 transparent transparent transparent;
+}
+.select-inset.disabled {
+    border-color: #dcdcdc;
+}
+.select select[disabled], .select-inset select[disabled] {
+    color: #dcdcdc;
+    cursor: not-allowed;
+}
+.select.disabled:before, .select-inset.disabled:before {
+    border-color: transparent transparent #dcdcdc transparent;  
+}
+.select.disabled:after, .select-inset.disabled:after {
+    border-color: #dcdcdc transparent transparent transparent;
 }
 
 /* cartao */
@@ -1838,7 +1920,7 @@ form .input:focus input,
     border-color: #99cc00;
 }
 
-.text[disabled]{
+.text[disabled] {
     background:transparent;
     border: none;
     border-bottom: solid 1px #dcdcdc !important;
@@ -1873,47 +1955,6 @@ form .input:focus input,
 textarea {
     resize: none; 
 }
-
-/* .select {
-    border: none;
-    position: relative;
-    display: block;
-    font-weight: 400;
-    overflow: hidden;
-}
-.select select {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    width: 130%\9\0;
-    height: 36px;
-    outline: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;    
-    padding: 5px 25px 5px 0;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #b8b8b8;
-    color: #797979;
-    font-family: 'proxima_novalight';
-    font-size: 18px;
-    position: relative;
-    z-index: 1;
-}
-.select select::-ms-expand {
-    display: none;
-}
-.select select:hover,
-.select select:active {
-    border-bottom: solid 1px #0099cc;
-}
-
-
-select.ng-invalid.ng-dirty {
-    border: none;
-    border-bottom: solid 1px #f05c58 !important;
-    color: #f05c58 !important;
-} */
 
 .smart-form *,
 .smart-form:after,
@@ -2023,7 +2064,7 @@ select.ng-invalid.ng-dirty {
 }
 
 span[class*="nivel"] {
-     float: left;
+    float: left;
     margin: 0 3px;
     height: 10px;
     border-left: solid 1px #999;
