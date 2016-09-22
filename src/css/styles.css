@@ -1896,6 +1896,8 @@ div[class*="col-md"]:last-of-type {
 .select-inset.valid {
     border-color: #A1CF17;
 }
+.text[disabled]:hover,
+.text-inset[disabled]:hover,
 .select.disabled,
 .select-inset.disabled {
     border-color: #dcdcdc;
