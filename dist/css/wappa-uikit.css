@@ -10719,6 +10719,10 @@ div[class*="col-md"]:last-of-type {
   padding-right: 30px !important;
 }
 
+.padding-right-40 {
+  padding-right: 40px !important;
+}
+
 /* margins */
 
 .no-margin {
