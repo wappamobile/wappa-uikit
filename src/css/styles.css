@@ -1756,8 +1756,8 @@ div[class*="col-md"]:last-of-type {
     transition: all 0.2s ease;
 }
 
-.select select,
-.select-inset select {
+.select select, .select-inset select {
+    box-sizing: border-box;
     border: none;
     color:  #797979;
     width: 100%;
