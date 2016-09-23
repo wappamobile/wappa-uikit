@@ -1698,7 +1698,7 @@ div[class*="col-md"]:last-of-type {
 
 .text,
 .text-inset {
-    line-height: 36px;
+    line-height: 34px;
     min-height: 36px;
     color: #797979;
 }
