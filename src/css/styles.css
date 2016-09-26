@@ -1762,14 +1762,13 @@ div[class*="col-md"]:last-of-type {
     color:  #797979;
     width: 100%;
     width: 130%\9\0;
-    font-size: 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;    
     z-index: 1;
     outline: 0;
-    padding-top: 8px;
-    padding-bottom: 6px;
+    padding-top: 9px;
+    padding-bottom: 7px;
 }
 
 .select select {
