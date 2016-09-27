@@ -11637,7 +11637,7 @@ div[class*="col-md"]:last-of-type {
   z-index: 1;
   outline: 0;
   padding-top: 9px;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
 }
 
 .select select {
