@@ -12557,7 +12557,7 @@ input[type="radio"].radio-person:checked + label span {
   display: block;
   overflow: hidden;
   white-space: nowrap;
-  padding: 9px 0;
+  padding: 8px 0;
 }
 
 .chosen-container-single .chosen-single div {
