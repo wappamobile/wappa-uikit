@@ -1767,8 +1767,8 @@ div[class*="col-md"]:last-of-type {
     appearance: none;    
     z-index: 1;
     outline: 0;
-    padding-top: 9px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 7px;
 }
 
 .select select {
@@ -2573,15 +2573,14 @@ input[type="radio"].radio-person:checked + label span {
     border-radius: 2px;
     height: 36px;
     padding: 0 25px 0 10px;
-    font: normal 16px 'proxima_nova_rgregular';
+    font-size: 14px;
     color: #797979;
 }
 .chosen-container-single .chosen-single span {
     display: block;
     overflow: hidden;
-    margin-right: 26px;
     white-space: nowrap;
-    padding: 8px 0;
+    padding: 9px 0;
 }
 .chosen-container-single .chosen-single div {
     position: absolute;
