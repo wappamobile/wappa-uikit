@@ -9577,18 +9577,22 @@ label {
 
 ::-webkit-input-placeholder {
   color: #797979;
+  font-style: italic;
 }
 
 :-moz-placeholder {
   color: #797979;
+  font-style: italic;
 }
 
 ::-moz-placeholder {
   color: #797979;
+  font-style: italic;
 }
 
 :-ms-input-placeholder {
   color: #797979;
+  font-style: italic;
 }
 
 .hide {
@@ -11587,6 +11591,7 @@ div[class*="col-md"]:last-of-type {
 
 [contenteditable=true]:empty:not(:focus):before {
   content: attr(placeholder);
+  font-style: italic;
 }
 
 .text[disabled],
@@ -11638,6 +11643,16 @@ div[class*="col-md"]:last-of-type {
   outline: 0;
   padding-top: 8px;
   padding-bottom: 7px;
+}
+
+.select select:invalid,
+.select-inset select:invalid {
+  font-style: italic;
+}
+
+.select select:invalid option,
+.select-inset select:invalid option {
+  font-style: normal;
 }
 
 .select select {
