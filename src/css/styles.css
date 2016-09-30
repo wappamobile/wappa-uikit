@@ -1775,9 +1775,6 @@ div[class*="col-md"]:last-of-type {
     padding-top: 8px;
     padding-bottom: 7px;
 }
-.select-inset select {
-    padding-bottom: 8px;
-}
 
 .select select:invalid, .select-inset select:invalid {
     font-style: italic;
@@ -1791,6 +1788,7 @@ div[class*="col-md"]:last-of-type {
     padding-right: 25px;
 }
 .select-inset select {
+    padding-top: 7px;
     padding-left: 10px;
 }
 .select select::-ms-expand {
