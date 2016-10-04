@@ -1443,9 +1443,6 @@ div[class*="col-md"]:last-of-type {
 #leftPanel .nav>ul>li.active>a {
     color: #37a0da !important;
 }
-#leftPanel .nav>ul>li.active>a>i {
-    text-shadow: 0 0 1px #fff;
-}
 #leftPanel .nav>ul>li.active>a>span {
     font-family: 'proxima_novasemibold';
 }
