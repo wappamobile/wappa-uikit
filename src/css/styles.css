@@ -3013,7 +3013,7 @@ input[type="radio"].radio-person:checked + label span {
 
 /*Google Places*/
 .pac-container { 
-    width:500px !important;
+    width:500px;
     border-radius:2px;
 }
 .pac-container:after {
