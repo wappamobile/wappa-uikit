@@ -39,11 +39,11 @@ gulp.task('browser-sync', function () {
             'docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}',
             'src/css/**/*.css'
         ], {
-            startPath: 'index.html',
+            startPath: 'docs/index.html',
             server: {
                 baseDir: './'
             },
-            host: "0.0.0.0"
+            host: '0.0.0.0'
         }
     );
 });
