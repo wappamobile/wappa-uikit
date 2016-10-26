@@ -12481,7 +12481,7 @@ input[type="radio"].radio-person:checked + label span {
 .label {
   padding-bottom: .215em;
   border-radius: 2px;
-  font-size: 100%;
+  font-size: 70%;
 }
 
 .label-default {
