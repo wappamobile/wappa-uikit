@@ -9480,6 +9480,7 @@ html,
 body {
   background: #f3f3f3;
   color: #302f2f;
+  overflow-x: hidden;
   overflow-y: visible;
   min-width: 320px;
 }
