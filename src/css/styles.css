@@ -1487,9 +1487,10 @@ div[class*="col-md"]:last-of-type {
 }
 
 #leftPanel .icoMenuPassos {
-    background-color: #c42525;
+    background-color: #E74C3C;
     width: 18px;
     margin-top: 5px;
+    margin-right: 10px;
     height: 18px;
     border-radius: 10px;
     font-family: 'proxima_nova_rgbold', sans-serif;
