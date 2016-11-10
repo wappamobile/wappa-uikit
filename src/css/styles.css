@@ -538,16 +538,17 @@ div[class*="col-md"]:last-of-type {
     box-shadow: none;
     opacity: .65;
 }
-.btn-primary {
+.btn-primary, .btn-primary[disabled]:hover {
     background: #0099cc;
 }
-.btn-default{
+.btn-default, .btn-default[disabled]:hover{
     background:#f9f9f9;
+    border-color: #adadad;
 }
-.btn-danger{
+.btn-danger, .btn-danger[disabled]:hover {
     background:#f05c58;
 }
-.btn-success {
+.btn-success, .btn-success[disabled]:hover {
     background: #99cc00;
     border-color: #9ec528;
 }
@@ -565,7 +566,7 @@ div[class*="col-md"]:last-of-type {
     border-color: #2c3e50;
     color:white;
 }
-.btn-warning{
+.btn-warning, .btn-warning[disabled]:hover{
     background-color:#f39c12;
 }
 .btn-pass {
