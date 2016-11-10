@@ -114,10 +114,10 @@ gulp.task('icomoon-update', function (cb) {
 });
 
 gulp.task('build', ['clean-dist', 'icomoon-update'], function () {
-    gulp.start('css', 'fonts', 'images');
+    gulp.start('css', 'fonts', 'images', 'docs');
 });
 
-gulp.task('docs', ['clean-docs', 'icomoon-update'], function () {
+gulp.task('docs', ['clean-docs'], function () {
     gulp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css');
 });
 
