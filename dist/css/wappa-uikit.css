@@ -9479,7 +9479,6 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   min-width: 320px;
-  height: 100%;
 }
 
 html {
@@ -10911,7 +10910,6 @@ div[class*="col-md"]:last-of-type {
 
 #content {
   padding: 25px 25px 0;
-  height: auto !important;
 }
 
 @media (max-width: 767px) {
