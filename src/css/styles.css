@@ -2085,6 +2085,9 @@ span[class*="nivel"] {
     padding-left: 10px;
     padding-right: 10px;
 }
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background: #efefef;
+}
 
 .check-person {
     cursor: pointer;
