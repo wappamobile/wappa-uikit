@@ -9868,7 +9868,7 @@ div[class*="col-md"]:last-of-type {
 .curtain-mask {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, .8);
+  background: #eee;
   position: absolute;
   top: 0;
   left: 0;
@@ -11323,7 +11323,7 @@ div[class*="col-md"]:last-of-type {
   margin-right: 10px;
   height: 18px;
   border-radius: 1px;
-  font-family: 'proxima_nova_rgbold',sans-serif;
+  font-family: 'proxima_nova_rgregular',sans-serif;
   font-style: normal;
   font-size: 14px;
   text-align: center;
