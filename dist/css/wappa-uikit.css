@@ -9807,9 +9807,6 @@ div[class*="col-md"]:last-of-type {
 /* Alerts */
 
 .alert {
-  margin-bottom: 20px;
-  margin-top: 0;
-  color: #675100;
   border-width: 0;
   padding: 12px 25px;
   font-size: 17px;
@@ -10107,32 +10104,6 @@ div[class*="col-md"]:last-of-type {
 
 .btn-inline {
   padding: 7px 12px;
-}
-
-.btnCircle {
-  background: #0094d6;
-  border: 0;
-  border-radius: 50% !important;
-  color: white;
-  width: 45px;
-  height: 45px;
-  font-family: 'proxima_nova_rgregular';
-  text-indent: -2px;
-  position: relative;
-  border: 1px solid #0094d6;
-  top: 9px;
-}
-
-.btnCircle:hover {
-  background-color: #286090;
-  border-color: #204d74;
-}
-
-.btnCircle[disabled] {
-  cursor: not-allowed;
-  filter: alpha(opacity=65);
-  box-shadow: none;
-  opacity: .65;
 }
 
 .btn-primary,
@@ -10478,16 +10449,6 @@ div[class*="col-md"]:last-of-type {
   padding: 0!important;
 }
 
-.no-padding>table {
-  border: none!important;
-  margin-bottom: 0!important;
-  border-bottom-width: 0!important;
-}
-
-.no-padding-bottom {
-  padding-bottom: 0!important;
-}
-
 .padding-top-0 {
   padding-top: 0!important;
 }
@@ -10542,16 +10503,6 @@ div[class*="col-md"]:last-of-type {
 
 .padding-bottom-50 {
   padding-bottom: 50px !important;
-}
-
-.no-padding>table tr td:last-child,
-.no-padding>table tr th:last-child {
-  border-right: none!important;
-}
-
-.no-padding>table tr td:first-child,
-.no-padding>table tr th:first-child {
-  border-left: none!important;
 }
 
 .padding-0 {
