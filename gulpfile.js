@@ -2,8 +2,8 @@
 
 var gp = require('gulp');
 var exec = require('child_process').exec;
-var $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'del', 'browser-sync']
+var _ = require('gulp-load-plugins')({
+    pattern: ['gulp-*', 'del', 'browser-sync', 'run-sequence']
 });
 
 gp.task('images', function () {
@@ -34,11 +34,11 @@ gp.task('css', function () {
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css'
         ])
-        .pipe($.concatCss('wappa-uikit.css'))
+        .pipe(_.concatCss('wappa-uikit.css'))
         .pipe(gp.dest('dist/css/'))
-        .pipe($.concatCss('wappa-uikit.min.css'))
-        .pipe($.stripCssComments({ all: true }))
-        .pipe($.cssmin())
+        .pipe(_.concatCss('wappa-uikit.min.css'))
+        .pipe(_.stripCssComments({ all: true }))
+        .pipe(_.cssmin())
         .pipe(gp.dest('dist/css'));
 });
 
@@ -49,21 +49,21 @@ gp.task('docs-css', function () {
             'src/css/**/*.css',
             'src/docs/css/*.css'
         ])
-        .pipe($.concatCss('docs.min.css', {rebaseUrls:false}))
-        .pipe($.stripCssComments({ all: true }))
-        .pipe($.cssmin())
+        .pipe(_.concatCss('docs.min.css', {rebaseUrls:false}))
+        .pipe(_.stripCssComments({ all: true }))
+        .pipe(_.cssmin())
         .pipe(gp.dest('docs/css/'));
 });
 
 gp.task('docs-html', function () {
     return gp.src('src/docs/**/*.html')
-        .pipe($.useref())
-        .pipe($.htmlmin({collapseWhitespace: true}))
+        .pipe(_.useref())
+        .pipe(_.htmlmin({collapseWhitespace: true}))
         .pipe(gp.dest( 'docs' ));
 });
 
 gp.task('browser-sync', function () {
-    $.browserSync.instance = $.browserSync.init(
+    _.browserSync.instance = _.browserSync.init(
         [
             'docs/**/*.html',
             'docs/css/**/*.css',
@@ -80,11 +80,11 @@ gp.task('browser-sync', function () {
 });
 
 gp.task('clean-docs', function(done) {
-    $.del(['docs'], done);
+    _.del(['docs'], done);
 });
 
 gp.task('clean-dist', function(done) {
-    $.del(['dist'], done);
+    _.del(['dist'], done);
 });
 
 gp.task('serve', ['browser-sync']);
@@ -133,10 +133,8 @@ gp.task('docs', ['clean-docs'], function () {
     gp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
 });
 
-gp.task('deploy', [], function() {
-    gp.start('build', function(){
-        gp.start('git-update');
-    });
+gp.task('deploy', ['clean-dist', 'icomoon-update'], function() {
+    _.runSequence('css', 'fonts', 'images', 'docs', 'git-update');
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 

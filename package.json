@@ -37,6 +37,7 @@
     "gulp-load-plugins": "^1.2.4",
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglifycss": "^1.0.6",
-    "gulp-useref": "^3.1.2"
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
   }
 }
