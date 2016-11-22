@@ -119,7 +119,7 @@ g.task('git-update', function () {
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
 
         shell('git status -s | awk \'{if ($1 && $2) print "true"}\'', function(error, modified){
-            if (!modified) return console.info( '[beta build] not updated' );
+            if (!modified) return console.info( '[beta-build] not updated' );
 
             shell(
                 'git add .;'+
