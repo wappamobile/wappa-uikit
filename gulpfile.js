@@ -1,49 +1,49 @@
 'use strict';
 
-var gp = require('gulp');
+var g = require('gulp');
 var exec = require('child_process').exec;
 var _ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'del', 'browser-sync', 'run-sequence']
 });
 
-gp.task('images', function () {
-    return gp.src(
+g.task('images', function () {
+    return g.src(
         ['src/images/**/*.{ico,gif,jpg,jpeg,png,svg}'])
-        .pipe(gp.dest( 'dist/images' ));
+        .pipe(g.dest( 'dist/images' ));
 });
 
-gp.task('docs-images', function () {
-    return gp.src(
+g.task('docs-images', function () {
+    return g.src(
         ['src/docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}'])
-        .pipe(gp.dest( 'docs/images' ));
+        .pipe(g.dest( 'docs/images' ));
 });
 
-gp.task('fonts', function () {
-    return gp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gp.dest( 'dist/fonts' ));
+g.task('fonts', function () {
+    return g.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(g.dest( 'dist/fonts' ));
 });
 
-gp.task('docs-fonts', function () {
-    return gp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gp.dest( 'docs/fonts' ));
+g.task('docs-fonts', function () {
+    return g.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(g.dest( 'docs/fonts' ));
 });
 
-gp.task('css', function () {
-    gp.src([
+g.task('css', function () {
+    g.src([
             'src/css/typography.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css'
         ])
         .pipe(_.concatCss('wappa-uikit.css'))
-        .pipe(gp.dest('dist/css/'))
+        .pipe(g.dest('dist/css/'))
         .pipe(_.concatCss('wappa-uikit.min.css'))
         .pipe(_.stripCssComments({ all: true }))
         .pipe(_.cssmin())
-        .pipe(gp.dest('dist/css'));
+        .pipe(g.dest('dist/css'));
 });
 
-gp.task('docs-css', function () {
-    gp.src([
+g.task('docs-css', function () {
+    g.src([
             'src/css/typography.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css',
@@ -52,17 +52,17 @@ gp.task('docs-css', function () {
         .pipe(_.concatCss('docs.min.css', {rebaseUrls:false}))
         .pipe(_.stripCssComments({ all: true }))
         .pipe(_.cssmin())
-        .pipe(gp.dest('docs/css/'));
+        .pipe(g.dest('docs/css/'));
 });
 
-gp.task('docs-html', function () {
-    return gp.src('src/docs/**/*.html')
+g.task('docs-html', function () {
+    return g.src('src/docs/**/*.html')
         .pipe(_.useref())
         .pipe(_.htmlmin({collapseWhitespace: true}))
-        .pipe(gp.dest( 'docs' ));
+        .pipe(g.dest( 'docs' ));
 });
 
-gp.task('browser-sync', function () {
+g.task('browser-sync', function () {
     _.browserSync.instance = _.browserSync.init(
         [
             'docs/**/*.html',
@@ -79,17 +79,17 @@ gp.task('browser-sync', function () {
     );
 });
 
-gp.task('clean-docs', function(done) {
+g.task('clean-docs', function(done) {
     _.del(['docs'], done);
 });
 
-gp.task('clean-dist', function(done) {
+g.task('clean-dist', function(done) {
     _.del(['dist'], done);
 });
 
-gp.task('serve', ['browser-sync']);
+g.task('serve', ['browser-sync']);
 
-gp.task('icomoon-update', function (cb) {
+g.task('icomoon-update', function (cb) {
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot > src/fonts/icomoon.eot');
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.svg > src/fonts/icomoon.svg');
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.ttf > src/fonts/icomoon.ttf');
@@ -113,44 +113,41 @@ gp.task('icomoon-update', function (cb) {
     });
 });
 
-gp.task('git-update', function () {
+g.task('git-update', function () {
     exec('git describe --abbrev=0 --tags', function(error, stdout){
         var tag = stdout.replace('\r\n','');
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
 
-        exec('git add .');
-        exec('git commit -m "build"');
-        exec('git tag ' + newTag);
-        exec('git push origin HEAD --tags');
+        exec('git add .;git commit -m "build";git tag ' + newTag + '; git push origin HEAD --tags');
     });
 });
 
-gp.task('build', ['clean-dist', 'icomoon-update'], function () {
-    gp.start('css', 'fonts', 'images', 'docs');
+g.task('build', ['clean-dist', 'icomoon-update'], function () {
+    g.start('css', 'fonts', 'images', 'docs');
 });
 
-gp.task('docs', ['clean-docs'], function () {
-    gp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css');
+g.task('docs', ['clean-docs'], function () {
+    g.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css');
 });
 
-gp.task('deploy', ['clean-dist', 'icomoon-update'], function() {
-    _.runSequence(
-        'css', 
-        'fonts', 
-        'images', 
-        'docs-html', 
-        'docs-fonts', 
-        'docs-images', 
-        'docs-css', 
-        'git-update'
-    );
+g.task('deploy', [], function () {
+    var stream = 0
+    g.start('build', function (){
+        stream=1;
+    });
+    var teste = setInterval(function(){
+        if(stream){
+            g.start('git-update');
+            clearInterval(teste);
+        }
+    });
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 
-gp.task('wappa-uikit', function() {
-    gp.src('bower_components/wappa-uikit/dist/images/**/*.{ico,gif,jpg,jpeg,png,svg}')
-        .pipe(gp.dest('dist/images/'));
+g.task('wappa-uikit', function() {
+    g.src('bower_components/wappa-uikit/dist/images/**/*.{ico,gif,jpg,jpeg,png,svg}')
+        .pipe(g.dest('dist/images/'));
 
-    gp.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gp.dest( 'dist/fonts/' ));
+    g.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(g.dest( 'dist/fonts/' ));
 });
