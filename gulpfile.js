@@ -130,11 +130,20 @@ gp.task('build', ['clean-dist', 'icomoon-update'], function () {
 });
 
 gp.task('docs', ['clean-docs'], function () {
-    gp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
+    gp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css');
 });
 
 gp.task('deploy', ['clean-dist', 'icomoon-update'], function() {
-    _.runSequence('css', 'fonts', 'images', 'docs', 'git-update');
+    _.runSequence(
+        'css', 
+        'fonts', 
+        'images', 
+        'docs-html', 
+        'docs-fonts', 
+        'docs-images', 
+        'docs-css', 
+        'git-update'
+    );
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 
