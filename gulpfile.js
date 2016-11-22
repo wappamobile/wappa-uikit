@@ -118,11 +118,12 @@ g.task('git-update', function () {
         var tag = stdout.replace('\r\n','');
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
 
-        exec('git status -s', function(a,b,c,d,e){
-            console.log(a,b,c,d,e);
+        exec('git status -s', function(error, modified){
+            if (!modified) return;
+
+            exec('git add .;git commit -m "build";git tag ' + newTag + '; git push origin HEAD --tags');
         });
 
-        //exec('git add .;git commit -m "build";git tag ' + newTag + '; git push origin HEAD --tags');
     });
 });
 
@@ -139,10 +140,10 @@ g.task('deploy', [], function () {
     g.start('build', function (){
         stream=1;
     });
-    var teste = setInterval(function(){
+    var threadGit = setInterval(function(){
         if(stream){
             g.start('git-update');
-            clearInterval(teste);
+            clearInterval(threadGit);
         }
     });
 });
