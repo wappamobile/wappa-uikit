@@ -133,8 +133,8 @@ gulp.task('docs', ['clean-docs'], function () {
     gulp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
 });
 
-gulp.task('deploy', ['build'], function() {
-    gulp.start('git-update');
+gulp.task('deploy', ['clean-dist', 'icomoon-update'], function() {
+    gulp.start('css', 'fonts', 'images', 'docs', 'git-update');
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 
