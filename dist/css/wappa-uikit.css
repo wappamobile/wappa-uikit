@@ -9580,7 +9580,7 @@ input,
 select,
 button,
 .transition {
-  transition: all 0.2s ease;
+  transition: all .2s ease;
 }
 
 label {
@@ -11106,8 +11106,8 @@ div[class*="col-md"]:last-of-type {
   top: 0;
   left: 0;
   z-index: 904;
-  transition: 250ms cubic-bezier(0.1, .57, .1, 1);
-  transform: translate(0px, 0) translateZ(0px);
+  transition: 250ms cubic-bezier(.1, .57, .1, 1);
+  transform: translate(0, 0) translateZ(0);
 }
 
 #leftPanel .nav ul li a {
@@ -11502,7 +11502,7 @@ div[class*="col-md"]:last-of-type {
 .select-inset {
   position: relative;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
 }
 
 .select select,
@@ -11559,7 +11559,7 @@ div[class*="col-md"]:last-of-type {
   height: 0;
   border-style: solid;
   position: absolute;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
   right: 10px;
 }
 
@@ -11777,10 +11777,10 @@ span[class*="nivel"] {
   height: 20px;
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, .1);
   transition-duration: .4s;
   transition-property: background-color, box-shadow;
-  box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+  box-shadow: inset 0 0 0 0 rgba(0,0,0,.4);
   cursor: pointer;
 }
 
@@ -11804,9 +11804,9 @@ span[class*="nivel"] {
   border-radius: inherit;
   background: #fff;
   transition-timing-function: cubic-bezier(.54,1.85,.5,1);
-  transition-duration: 0.4s;
+  transition-duration: .4s;
   transition-property: transform, background-color, box-shadow;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, .1), 0px 0px 0 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .2);
   pointer-events: none;
   margin-top: 1px;
   margin-left: 1px;
@@ -11816,7 +11816,7 @@ span[class*="nivel"] {
 .check-person input[type="checkbox"].ios-switch:checked + div > div {
   transform: translate3d(20px, 0, 0);
   background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px #0099cc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3), 0 0 0 1px #0099cc;
 }
 
 .check-person input[type="checkbox"].tinyswitch.ios-switch + div > div {
@@ -11826,7 +11826,7 @@ span[class*="nivel"] {
 
 .check-person input[type="checkbox"].tinyswitch.ios-switch:checked + div > div {
   transform: translate3d(16px, 0, 0);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px #0099cc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3), 0 0 0 1px #0099cc;
 }
 
 .check-person input[type="checkbox"][disabled].tinyswitch.ios-switch:checked + div,
@@ -11878,7 +11878,7 @@ input[type="radio"].radio-person:checked + label span:before {
 
 input[type="radio"].radio-person + label span,
 input[type="radio"].radio-person:checked + label span {
-  transition: background-color 0.4s linear;
+  transition: background-color .4s linear;
 }
 
 .radio {
@@ -12547,7 +12547,7 @@ input[type="radio"].radio-person:checked + label span {
 .clockpicker-tick.active,
 .clockpicker-tick:hover {
   background-color: #c0e5f7;
-  background-color: rgba(0, 149, 221, 0.25);
+  background-color: rgba(0, 149, 221, .25);
 }
 
 .clockpicker-button {
@@ -12567,7 +12567,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .clockpicker-minutes.clockpicker-dial-out {
-  transform: scale(0.8, 0.8);
+  transform: scale(.8, .8);
 }
 
 .clockpicker-canvas {
@@ -12575,7 +12575,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .clockpicker-canvas-out {
-  opacity: 0.25;
+  opacity: .25;
 }
 
 .clockpicker-canvas-bearing,
@@ -12590,7 +12590,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .clockpicker-canvas-bg-trans {
-  fill: rgba(0, 149, 221, 0.25);
+  fill: rgba(0, 149, 221, .25);
 }
 
 .clockpicker-canvas line {
@@ -12746,7 +12746,7 @@ input[type="radio"].radio-person:checked + label span {
 .pac-container:after {
   /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
   background-image: none !important;
-  height: 0px;
+  height: 0;
 }
 
 .pac-item {
@@ -12770,7 +12770,7 @@ input[type="radio"].radio-person:checked + label span {
   content: 'Selecionar';
   display: block;
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 6px;
   color: #fff;
   background: #0099cc;
@@ -12920,31 +12920,31 @@ input[type="radio"].radio-person:checked + label span {
 
 @keyframes animationFrames {
   0% {
-    transform: translate(0px,0px);
+    transform: translate(0,0);
   }
 
   15% {
-    transform: translate(0px,-5px);
+    transform: translate(0,-5px);
   }
 
   30% {
-    transform: translate(0px,0px);
+    transform: translate(0,0);
   }
 
   45% {
-    transform: translate(0px,-5px);
+    transform: translate(0,-5px);
   }
 
   60% {
-    transform: translate(0px,0px);
+    transform: translate(0,0);
   }
 
   75% {
-    transform: translate(0px,0px);
+    transform: translate(0,0);
   }
 
   100% {
-    transform: translate(0px,0px);
+    transform: translate(0,0);
   }
 }
 
