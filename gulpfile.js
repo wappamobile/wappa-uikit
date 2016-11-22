@@ -1,49 +1,49 @@
 'use strict';
 
-var gulp = require('gulp');
+var gp = require('gulp');
 var exec = require('child_process').exec;
 var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'del', 'browser-sync']
 });
 
-gulp.task('images', function () {
-    return gulp.src(
+gp.task('images', function () {
+    return gp.src(
         ['src/images/**/*.{ico,gif,jpg,jpeg,png,svg}'])
-        .pipe(gulp.dest( 'dist/images' ));
+        .pipe(gp.dest( 'dist/images' ));
 });
 
-gulp.task('docs-images', function () {
-    return gulp.src(
+gp.task('docs-images', function () {
+    return gp.src(
         ['src/docs/images/**/*.{ico,gif,jpg,jpeg,png,svg}'])
-        .pipe(gulp.dest( 'docs/images' ));
+        .pipe(gp.dest( 'docs/images' ));
 });
 
-gulp.task('fonts', function () {
-    return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gulp.dest( 'dist/fonts' ));
+gp.task('fonts', function () {
+    return gp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gp.dest( 'dist/fonts' ));
 });
 
-gulp.task('docs-fonts', function () {
-    return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gulp.dest( 'docs/fonts' ));
+gp.task('docs-fonts', function () {
+    return gp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gp.dest( 'docs/fonts' ));
 });
 
-gulp.task('css', function () {
-    gulp.src([
+gp.task('css', function () {
+    gp.src([
             'src/css/typography.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css'
         ])
         .pipe($.concatCss('wappa-uikit.css'))
-        .pipe(gulp.dest('dist/css/'))
+        .pipe(gp.dest('dist/css/'))
         .pipe($.concatCss('wappa-uikit.min.css'))
         .pipe($.stripCssComments({ all: true }))
         .pipe($.cssmin())
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gp.dest('dist/css'));
 });
 
-gulp.task('docs-css', function () {
-    gulp.src([
+gp.task('docs-css', function () {
+    gp.src([
             'src/css/typography.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css',
@@ -52,17 +52,17 @@ gulp.task('docs-css', function () {
         .pipe($.concatCss('docs.min.css', {rebaseUrls:false}))
         .pipe($.stripCssComments({ all: true }))
         .pipe($.cssmin())
-        .pipe(gulp.dest('docs/css/'));
+        .pipe(gp.dest('docs/css/'));
 });
 
-gulp.task('docs-html', function () {
-    return gulp.src('src/docs/**/*.html')
+gp.task('docs-html', function () {
+    return gp.src('src/docs/**/*.html')
         .pipe($.useref())
         .pipe($.htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest( 'docs' ));
+        .pipe(gp.dest( 'docs' ));
 });
 
-gulp.task('browser-sync', function () {
+gp.task('browser-sync', function () {
     $.browserSync.instance = $.browserSync.init(
         [
             'docs/**/*.html',
@@ -79,17 +79,17 @@ gulp.task('browser-sync', function () {
     );
 });
 
-gulp.task('clean-docs', function(done) {
+gp.task('clean-docs', function(done) {
     $.del(['docs'], done);
 });
 
-gulp.task('clean-dist', function(done) {
+gp.task('clean-dist', function(done) {
     $.del(['dist'], done);
 });
 
-gulp.task('serve', ['browser-sync']);
+gp.task('serve', ['browser-sync']);
 
-gulp.task('icomoon-update', function (cb) {
+gp.task('icomoon-update', function (cb) {
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot > src/fonts/icomoon.eot');
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.svg > src/fonts/icomoon.svg');
     exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.ttf > src/fonts/icomoon.ttf');
@@ -113,7 +113,7 @@ gulp.task('icomoon-update', function (cb) {
     });
 });
 
-gulp.task('git-update', function () {
+gp.task('git-update', function () {
     exec('git describe --abbrev=0 --tags', function(error, stdout){
         var tag = stdout.replace('\r\n','');
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
@@ -125,23 +125,25 @@ gulp.task('git-update', function () {
     });
 });
 
-gulp.task('build', ['clean-dist', 'icomoon-update'], function () {
-    gulp.start('css', 'fonts', 'images', 'docs');
+gp.task('build', ['clean-dist', 'icomoon-update'], function () {
+    gp.start('css', 'fonts', 'images', 'docs');
 });
 
-gulp.task('docs', ['clean-docs'], function () {
-    gulp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
+gp.task('docs', ['clean-docs'], function () {
+    gp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
 });
 
-gulp.task('deploy', ['clean-dist', 'icomoon-update'], function() {
-    gulp.start('css', 'fonts', 'images', 'docs', 'git-update');
+gp.task('deploy', [], function() {
+    gp.start('build', function(){
+        gp.start('git-update');
+    });
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 
-gulp.task('wappa-uikit', function() {
-    gulp.src('bower_components/wappa-uikit/dist/images/**/*.{ico,gif,jpg,jpeg,png,svg}')
-        .pipe(gulp.dest('dist/images/'));
+gp.task('wappa-uikit', function() {
+    gp.src('bower_components/wappa-uikit/dist/images/**/*.{ico,gif,jpg,jpeg,png,svg}')
+        .pipe(gp.dest('dist/images/'));
 
-    gulp.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-        .pipe(gulp.dest( 'dist/fonts/' ));
+    gp.src('bower_components/wappa-uikit/dist/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gp.dest( 'dist/fonts/' ));
 });
