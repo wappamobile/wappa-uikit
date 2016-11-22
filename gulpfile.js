@@ -118,7 +118,11 @@ g.task('git-update', function () {
         var tag = stdout.replace('\r\n','');
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
 
-        exec('git add .;git commit -m "build";git tag ' + newTag + '; git push origin HEAD --tags');
+        exec('git status -s', function(a,b,c,d,e){
+            console.log(a,b,c,d,e);
+        });
+
+        //exec('git add .;git commit -m "build";git tag ' + newTag + '; git push origin HEAD --tags');
     });
 });
 
