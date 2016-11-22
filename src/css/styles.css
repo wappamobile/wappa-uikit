@@ -1898,7 +1898,7 @@ span[class*="nivel"] {
     float: left;
     width: 18px; height: 18px;
     border-radius: inherit;
-    background: #ffffff;
+    background: #fff;
     transition-timing-function: cubic-bezier(.54,1.85,.5,1);
     transition-duration: 0.4s;
     transition-property: transform, background-color, box-shadow;
@@ -1911,7 +1911,7 @@ span[class*="nivel"] {
 
 .check-person input[type="checkbox"].ios-switch:checked + div > div {
     transform: translate3d(20px, 0, 0);
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px #0099cc;
 }
 
