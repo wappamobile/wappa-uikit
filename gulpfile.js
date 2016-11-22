@@ -1,7 +1,7 @@
 'use strict';
 
 var g = require('gulp');
-var exec = require('child_process').exec;
+var shell = require('child_process').exec;
 var _ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'del', 'browser-sync', 'run-sequence']
 });
@@ -90,45 +90,45 @@ g.task('clean-dist', function(done) {
 g.task('serve', ['browser-sync']);
 
 g.task('icomoon-update', function (cb) {
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot > src/fonts/icomoon.eot');
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.svg > src/fonts/icomoon.svg');
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.ttf > src/fonts/icomoon.ttf');
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff > src/fonts/icomoon.woff');
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff2 > src/fonts/icomoon.woff2');
-    exec('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/style.css > src/css/icons.css', function(err){
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot > src/fonts/icomoon.eot');
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.svg > src/fonts/icomoon.svg');
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.ttf > src/fonts/icomoon.ttf');
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff > src/fonts/icomoon.woff');
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.woff2 > src/fonts/icomoon.woff2');
+    shell('curl https://i.icomoon.io/public/daf89d25ac/WappaIcons/style.css > src/css/icons.css', function(err){
         cb(err);
 
         var file = 'src/css/icons.css';
         var fs = require('fs');
         fs.readFile(file, 'utf8', function (err, data) {
             if (err) {
-                return console.log(err);
+                return console.info(err);
             }
             var result = data.replace('https://i.icomoon.io/public/daf89d25ac/WappaIcons/icomoon.eot', '../fonts/icomoon.eot');
 
             fs.writeFile(file, result, 'utf8', function (err) {
-                if (err) return console.log(err);
+                if (err) return console.info(err);
             });
         });
     });
 });
 
 g.task('git-update', function () {
-    exec('git describe --abbrev=0 --tags', function(error, stdout){
+    shell('git describe --abbrev=0 --tags', function(error, stdout){
         var tag = stdout.replace('\r\n','');
         var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
 
-        exec('git status -s | awk \'{if ($1 && $2) print "true"}\'', function(error, modified){
-            if (!modified) return;
+        shell('git status -s | awk \'{if ($1 && $2) print "true"}\'', function(error, modified){
+            if (!modified) return console.info( '[beta build] not updated' );
 
-            exec(
+            shell(
                 'git add .;'+
                 'git commit -m "build";'+
                 'git tag ' + newTag + ';'+
                 'git push origin HEAD --tags',
                 function(err, stdout){
                     console.info( stdout );
-                    console.log( '[beta-build] ' + newTag);
+                    console.info( '[beta-build] ' + newTag);
                 }
             );
         });
