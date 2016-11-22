@@ -2057,7 +2057,7 @@ input[type="radio"].radio-person:checked + label span {
     content: '';
     position: absolute;
     left:0; 
-    top: 1px;
+    top:0;
     width: 17px; height: 17px;
     border: 1px solid #aaa;
     background: transparent;
@@ -2070,9 +2070,10 @@ input[type="radio"].radio-person:checked + label span {
 [type="checkbox"].checkbox:checked + label:after {
     content: '✔';
     position: absolute;
-    top: 4px; left: 2px;
-    font-size: 18px;
-    line-height: 0.8;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    line-height: 1;
     color: #0099cc;
     transition: all .2s;
     outline:0;
