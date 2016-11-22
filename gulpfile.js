@@ -128,6 +128,7 @@ g.task('git-update', function () {
                 'git push origin HEAD --tags',
                 function(err, stdout){
                     console.info( stdout );
+                    console.log( '[build] ' + newTag);
                 }
             );
         });
