@@ -113,12 +113,22 @@ gulp.task('icomoon-update', function (cb) {
     });
 });
 
+gulp.task('git-update', function () {
+    exec('git describe --abbrev=0 --tags', function(error, stdout){
+        var tag = stdout.replace('\r\n','');
+        var newTag = [ tag.split('.')[0], tag.split('.')[1], Number(tag.split('.')[2])+1].join('.');
+
+        exec('git tag ' + newTag);
+        exec('git push origin HEAD --tags');
+    });
+});
+
 gulp.task('build', ['clean-dist', 'icomoon-update'], function () {
     gulp.start('css', 'fonts', 'images', 'docs');
 });
 
 gulp.task('docs', ['clean-docs'], function () {
-    gulp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css');
+    gulp.start('docs-html', 'docs-fonts', 'docs-images', 'docs-css', 'git-update');
 });
 
 //inserir o código abaixo nos gulpfile.js das aplicações 
