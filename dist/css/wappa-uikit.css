@@ -9838,12 +9838,12 @@ div[class*="col-md"]:last-of-type {
 }
 
 .alert-warning {
-  color: white;
+  color: #fff;
   background: #F1C40F;
 }
 
 .alert-success {
-  color: white;
+  color: #fff;
   background: #9dbe3b;
 }
 
@@ -9982,7 +9982,7 @@ div[class*="col-md"]:last-of-type {
 
 .bgBlueLight {
   background: #0094d6;
-  color: #FFF;
+  color: #fff;
 }
 
 .bgGrayDark {
@@ -10136,7 +10136,7 @@ div[class*="col-md"]:last-of-type {
 .btn-inverse {
   background: #2C3E50;
   border-color: #415b76;
-  color: white;
+  color: #fff;
 }
 
 .btn-inverse:hover,
@@ -10144,7 +10144,7 @@ div[class*="col-md"]:last-of-type {
 .btn-inverse:active {
   background: #2c3e50;
   border-color: #2c3e50;
-  color: white;
+  color: #fff;
 }
 
 .btn-warning,
@@ -10385,7 +10385,7 @@ div[class*="col-md"]:last-of-type {
 }
 
 .txt-color-white {
-  color: white;
+  color: #fff;
 }
 
 .txt-color-default {
@@ -10799,7 +10799,7 @@ div[class*="col-md"]:last-of-type {
   display: block;
   margin-left: 17px;
   margin-top: -2px;
-  color: white;
+  color: #fff;
   font-size: 52px;
   line-height: 69px;
   height: 100%;
@@ -10813,7 +10813,7 @@ div[class*="col-md"]:last-of-type {
 
 #header .logo-desktop {
   margin-left: 17px;
-  color: white;
+  color: #fff;
   font-size: 76px;
   line-height: 69px;
   height: 100%;
@@ -10821,7 +10821,7 @@ div[class*="col-md"]:last-of-type {
 
 #header .icon-anos_LOGO {
   margin-left: 17px;
-  color: white;
+  color: #fff;
   font-size: 100px;
   line-height: 69px;
   height: 100%;
@@ -10829,7 +10829,7 @@ div[class*="col-md"]:last-of-type {
 
 #header .logo-mobile {
   margin-left: 17px;
-  color: white;
+  color: #fff;
   font-size: 34px;
   position: relative;
   top: 14px;
@@ -10857,12 +10857,12 @@ div[class*="col-md"]:last-of-type {
   height: 5px;
   margin: 4px;
   display: block;
-  background: white;
+  background: #fff;
   border-radius: 2px;
 }
 
 #header div a {
-  color: #FFF;
+  color: #fff;
   font-weight: normal;
 }
 
@@ -11255,7 +11255,7 @@ div[class*="col-md"]:last-of-type {
 }
 
 #leftPanel .nav>ul>li>ul>li>a:hover {
-  color: white;
+  color: #fff;
 }
 
 #leftPanel .nav>ul>li>ul>li>a:hover i {
@@ -11333,11 +11333,11 @@ div[class*="col-md"]:last-of-type {
 }
 
 #leftPanel .nav>ul>li>ul>li>ul>li>a:hover {
-  color: white;
+  color: #fff;
 }
 
 #leftPanel .nav>ul>li>ul>li>ul>li>a:hover:before {
-  background-color: white;
+  background-color: #fff;
 }
 
 #leftPanel .nav>ul>li>ul>li.active>a {
@@ -12291,7 +12291,7 @@ input[type="radio"].radio-person:checked + label span {
   display: block;
   white-space: nowrap;
   border: 1px solid #b8b8b8;
-  background: white;
+  background: #fff;
   border-radius: 2px;
   height: 36px;
   padding: 0 25px 0 10px;
@@ -12493,7 +12493,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .clockpicker-popover .popover-title {
-  background-color: white;
+  background-color: #fff;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -12512,7 +12512,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .clockpicker-plate {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
   width: 200px;
@@ -12612,7 +12612,7 @@ input[type="radio"].radio-person:checked + label span {
 
 .ui-widget-content {
   border: 1px solid #aaa;
-  background: white;
+  background: #fff;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
@@ -12657,7 +12657,7 @@ input[type="radio"].radio-person:checked + label span {
 .ui-datepicker .ui-datepicker-prev:hover,
 .ui-datepicker .ui-datepicker-next:hover {
   background: #0099cc;
-  color: white;
+  color: #fff;
   border-radius: 2px;
 }
 
@@ -12702,7 +12702,7 @@ input[type="radio"].radio-person:checked + label span {
 
 .ui-datepicker-today a:hover {
   background-color: #808080;
-  color: white;
+  color: #fff;
 }
 
 .ui-datepicker-today a {
@@ -12717,7 +12717,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .ui-datepicker td .ui-state-highlight {
-  color: white;
+  color: #fff;
   background-color: #F05C58;
   border-color: #F05C58;
   border-radius: 2px;
@@ -12730,7 +12730,7 @@ input[type="radio"].radio-person:checked + label span {
 }
 
 .ui-datepicker td .ui-state-hover {
-  color: white;
+  color: #fff;
   background: #0099cc;
   border-color: #0099cc;
   border-radius: 2px;
@@ -12772,7 +12772,7 @@ input[type="radio"].radio-person:checked + label span {
   position: absolute;
   right: 0px;
   bottom: 6px;
-  color: white;
+  color: #fff;
   background: #0099cc;
   padding: 0 10px;
   height: 35px;
