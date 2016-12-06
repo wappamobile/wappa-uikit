@@ -695,6 +695,9 @@ div[class*="col-md"]:last-of-type {
 .text-justify {
     text-align: justify!important;
 }
+.text-upper{
+    text-transform: uppercase;
+}
 
 /* Colors */
 .txt-color-blue-light {

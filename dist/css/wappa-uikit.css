@@ -10362,6 +10362,10 @@ div[class*="col-md"]:last-of-type {
   text-align: justify!important;
 }
 
+.text-upper {
+  text-transform: uppercase;
+}
+
 /* Colors */
 
 .txt-color-blue-light {
