@@ -11202,19 +11202,17 @@ div[class*="col-md"]:last-of-type {
 }
 
 #leftPanel .icoMenuPassos {
-  background-color: #E74C3C;
-  width: 18px;
-  margin-top: 3px;
+  color: #fff;
+  background: #E74C3C;
+  width: 25px;
   margin-right: 10px;
-  height: 18px;
-  border-radius: 1px;
-  font-family: 'proxima_nova_rgregular',sans-serif;
+  height: 25px;
+  border-radius: 50%;
+  font-family: proxima_novasemibold, sans-serif;
   font-style: normal;
   font-size: 14px;
   text-align: center;
-  color: #f5f5f5;
-  line-height: 20px;
-  letter-spacing: .01em;
+  line-height: 25px;
 }
 
 #leftPanel ul {
