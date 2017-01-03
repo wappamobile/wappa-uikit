@@ -543,9 +543,6 @@ div[class*="col-md"]:last-of-type {
 .btn-adm {
     margin: 0 4px;
 }
-.icon-adm {
-    color: #0099cc;
-}
 .btn-adm .icon-adm {
     position: relative;
     right: 3px;
