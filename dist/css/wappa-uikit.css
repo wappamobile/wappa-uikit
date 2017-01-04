@@ -10924,7 +10924,7 @@ div[class*="col-md"]:last-of-type {
 #header #dados a {
   font-size: 10px;
   display: inline-block;
-  padding: 12px 20px 11px;
+  padding: 13px 20px 12px;
 }
 
 #header #dados a:hover {
@@ -10932,7 +10932,7 @@ div[class*="col-md"]:last-of-type {
 }
 
 #header #dados .icon-user {
-  font-size: 40px;
+  font-size: 33px;
 }
 
 #header #dados .icon-eng {
