@@ -126,6 +126,7 @@ g.task('git-update', function () {
                 'git commit -m "build";'+
                 'git tag ' + newTag + ';'+
                 'git push origin HEAD --tags',
+                'npm publish ./'
                 function(err, stdout){
                     console.info( stdout );
                     console.info( '[beta-build] ' + newTag);
