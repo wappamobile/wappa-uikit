@@ -12416,6 +12416,24 @@ input[type="radio"].radio-person:checked + label span {
 
 /* custom scroll */
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0099CC;
+}
+
+body::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0,153,255,0.5);
+}
+
 .mCustomScrollBox {
   position: relative;
   overflow: hidden;
