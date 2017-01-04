@@ -1032,7 +1032,7 @@ div[class*="col-md"]:last-of-type {
 /* Header */
 #header {
     height: 61px;
-    background: #1f54a7;
+    background: #205081;
     position: relative;
     z-index: 905;
 }
@@ -1048,7 +1048,7 @@ div[class*="col-md"]:last-of-type {
 #header #logo-group {
     width: 260px;
     height: 100%;
-    background: #0c4195;
+    background: rgba(0,0,0,0.2);
 }
 #header .logo-desktop {
     margin-left: 17px;
@@ -1170,7 +1170,7 @@ div[class*="col-md"]:last-of-type {
     padding: 0;
 }
 #header #logout a {
-    background: #214d92;
+    background: rgba(0,0,0,0.2);
     display: block;
     height: 100%;
     padding: 17px 0 0 20px;
