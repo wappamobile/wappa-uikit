@@ -11290,7 +11290,7 @@ div[class*="col-md"]:last-of-type {
 }
 
 #leftPanel .nav>ul>li>ul>li>ul>li {
-  padding: 10px 20px;
+  padding: 10px 10px 10px 20px;
   border-left: 1px solid #575556;
   margin-left: 9px;
   position: relative;
