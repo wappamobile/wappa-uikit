@@ -10789,6 +10789,7 @@ div[class*="col-md"]:last-of-type {
 
 #content {
   padding: 25px 25px 0;
+  position: relative;
 }
 
 @media (max-width: 767px) {
