@@ -1543,7 +1543,6 @@ div[class*="col-md"]:last-of-type {
 .contentTabs .Tabs.active {
     border-bottom: solid 3px #0099cc;
     color: #0099cc;
-    font-family: 'proxima_nova_rgregular';
 }
 
 /* cartao */
