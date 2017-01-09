@@ -517,7 +517,7 @@ div[class*="col-md"]:last-of-type {
 }
 .btn-success, .btn-success[disabled]:hover {
     background: #99cc00;
-    border-color: #9ec528;
+    border-color: #86a724;
 }
 .btn-success:hover {
     background: #8ab018;
