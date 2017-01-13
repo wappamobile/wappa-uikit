@@ -11444,7 +11444,7 @@ div[class*="col-md"]:last-of-type {
 
 .text,
 .editable-input.ng-pristine.ng-valid,
-.select {
+.select select {
   border: none;
   border-bottom: solid 1px #b8b8b8;
 }
@@ -11473,6 +11473,10 @@ div[class*="col-md"]:last-of-type {
 
 .text-autosize {
   min-height: 36px;
+}
+
+.text-autosize[disabled] {
+  user-select: none;
 }
 
 [contenteditable=true]:empty:not(:focus):before {
@@ -11518,7 +11522,6 @@ div[class*="col-md"]:last-of-type {
 .select select,
 .select-inset select {
   box-sizing: border-box;
-  border: none;
   color: #797979;
   width: 100%;
   width: 130%\9\0;
@@ -11555,7 +11558,7 @@ div[class*="col-md"]:last-of-type {
   display: none;
 }
 
-.select-inset {
+.select-inset select {
   border: 1px solid #b8b8b8;
   border-radius: 2px;
 }
@@ -11696,31 +11699,33 @@ div[class*="col-md"]:last-of-type {
 
 .text-inset:hover,
 .text-inset:active,
-.select:hover,
-.select:active,
-.select-inset:hover,
-.select-inset:active {
+.select:hover select,
+.select select:focus,
+.select select:active,
+.select-inset:hover select,
+.select-inset select:focus,
+.select-inset:active select {
   border-color: #0099cc;
 }
 
 .text.error,
 .text-inset.error,
-.select.error,
-.select-inset.error {
+.select.error select,
+.select-inset.error select {
   border-color: #f05c58;
 }
 
 .text.valid,
 .text-inset.valid,
-.select.valid,
-.select-inset.valid {
+.select.valid select,
+.select-inset.valid select {
   border-color: #A1CF17;
 }
 
 .text[disabled]:hover,
 .text-inset[disabled]:hover,
-.select.disabled,
-.select-inset.disabled {
+.select.disabled select,
+.select-inset.disabled select {
   border-color: #dcdcdc;
 }
 
