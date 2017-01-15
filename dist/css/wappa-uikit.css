@@ -9294,12 +9294,11 @@ button.close {
   width: 250px;
 }
 
-.html-login .container.login .inner .formLogin #btnEntrar {
+.html-login .container.login .inner .formLogin #btnEntrar,
+.html-login .btn-success {
   transition: all .2s ease;
   width: 100%;
   padding: 12px 0;
-  background: #99cc00;
-  border: 1px solid #99cc00;
   color: white;
   border-radius: 4px;
   font-size: 18px;
